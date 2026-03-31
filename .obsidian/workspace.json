@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-03-31/ros.md",
+                "file": "2026-03-31/plan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ros"
+              "title": "plan"
             }
           }
         ]
@@ -197,10 +197,10 @@
   },
   "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
-    "2026-03-31/plan.md",
-    "2026-03-31/english.md",
     "2026-03-31/ml.md",
+    "2026-03-31/english.md",
     "2026-03-31/ros.md",
+    "2026-03-31/plan.md",
     "model/00-晨思.md",
     "model/01-plan.md",
     "model/02-复盘.md",

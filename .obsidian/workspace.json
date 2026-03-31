@@ -11,13 +11,14 @@
             "id": "65a5a1fe345b1853",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "未命名.base",
-                "viewName": "表格"
+                "file": "2026-03-31/plan.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "未命名"
+              "icon": "lucide-file",
+              "title": "plan"
             }
           }
         ]
@@ -179,7 +180,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,6 +197,12 @@
   },
   "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
+    "2026-03-31/english.md",
+    "2026-03-31/ml.md",
+    "2026-03-31/plan.md",
+    "2026-03-31/ros.md",
+    "2026-03-30/plan.md",
+    "2026-03-30/ml.md",
     "1234.md",
     "未命名.base",
     "新建 文本文档.txt"

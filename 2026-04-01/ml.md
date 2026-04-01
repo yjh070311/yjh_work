@@ -11,3 +11,5 @@ want min J(w,b)
   tmp_b=b-adj/db
   w=tmp_w
   b=tmp_b
+  导数在min右边positive，左边negative都契合趋势
+  

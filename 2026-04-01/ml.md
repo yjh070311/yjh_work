@@ -8,3 +8,4 @@ want min J(w,b)
   
   w=w-adj/dw
   a:learninig rate控制下坡速度大小
+  b=b-adj/db

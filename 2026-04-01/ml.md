@@ -12,4 +12,5 @@ want min J(w,b)
   w=tmp_w
   b=tmp_b
   导数在min右边positive，左边negative都契合趋势
-  
+## squared erroe cost function for the linear regression model with gradient descent 
+

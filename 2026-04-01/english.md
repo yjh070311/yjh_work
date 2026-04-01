@@ -8,3 +8,6 @@ law enforcement 执法人员
 tear gas 催泪瓦斯
 detention center 看守所，集中营 
 scour 擦净dispersals 进行清场
+netizen 网友
+media outlets 媒体
+roam 漫游

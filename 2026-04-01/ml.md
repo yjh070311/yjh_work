@@ -6,4 +6,5 @@ want min J(w,b)
   continue change until near a minimum
   环顾四周寻找下降值
   
-  w=w-a*dj/dw
+  w=w-adj/dw
+  

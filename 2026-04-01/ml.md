@@ -7,4 +7,4 @@ want min J(w,b)
   环顾四周寻找下降值
   
   w=w-adj/dw
-  
+  a:learninig rate控制下坡速度大小

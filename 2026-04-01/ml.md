@@ -14,3 +14,5 @@ want min J(w,b)
   导数在min右边positive，左边negative都契合趋势
 ## squared erroe cost function for the linear regression model with gradient descent 
 
+最终
+w=w-α/m

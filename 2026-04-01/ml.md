@@ -4,4 +4,6 @@ want min J(w,b)
   min J(w1,w2,wn,b)
   initial guess(0,0)
   continue change until near a minimum
+  环顾四周寻找下降值
+  
   

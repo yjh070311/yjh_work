@@ -6,6 +6,7 @@ want min J(w,b)
   continue change until near a minimum
   环顾四周寻找下降值
   
-  w=w-adj/dw
+  tmp_w=w-adj/dw
   a:learninig rate控制下坡速度大小
-  b=b-adj/db
+  tmp_b=b-adj/db
+  w=

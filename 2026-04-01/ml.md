@@ -15,4 +15,5 @@ want min J(w,b)
 ## squared erroe cost function for the linear regression model with gradient descent 
 
 最终
-w=w-α/m
+w=w-α/m×(f(w,b)-y)×x
+b同理没最后的x，由微积分得到

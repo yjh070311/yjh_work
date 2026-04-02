@@ -56,3 +56,4 @@ def compute_gradient(x, y, w, b):
 computer_gradient实现（4），lab2的computer_cost实现（2）
 惯例1.w.r.t:with respect to,ru==如J(wb)w.r.t the parameter b
 2.导数命名：dj_db
+此代码块更新偏导数并输出

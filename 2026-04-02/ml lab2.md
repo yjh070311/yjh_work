@@ -34,3 +34,9 @@ def compute_cost(x, y, w, b):
 ```
 与lab1的f(w,b)大致相同，多了计算cost并结算所有样本平方误差cost_sum,根据公式得出total_cost
 我要找到一个w，b是total_cost=0
+```
+plt.close('all') 
+fig, ax, dyn_items = plt_stationary(x_train, y_train) 
+updater = plt_update_onclick(fig, ax, x_train, y_train, dyn_items)
+```
+plt.close()

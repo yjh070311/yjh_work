@@ -69,3 +69,4 @@ def compute_model_output(x, w, b):
 ```
 此计算给定w，b线性模型的预测值
 m获取样本训练的数量
+f_wb创建一个全是 0 的 NumPy 数组

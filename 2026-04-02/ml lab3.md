@@ -123,4 +123,4 @@ ax1.set_ylabel('Cost') ; ax2.set_ylabel('Cost')
 ax1.set_xlabel('iteration step') ; ax2.set_xlabel('iteration step') 
 plt.show()
 ```
-fig,ax=plt.subplots(nrows,ncols,..)
+fig,ax=plt.subplots(nrows行数,ncols列数,figsize图形大小)

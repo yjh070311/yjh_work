@@ -12,5 +12,5 @@ print(f"y_train = {y_train}")
 print(f"x_train.shape: {x_train.shape}")
 m = x_train.shape[0]
 print(f"Number of training examples is: {m}")
-
 ```
+numpy数组.shape参数，x_train.shape

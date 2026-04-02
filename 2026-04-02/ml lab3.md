@@ -117,5 +117,10 @@ if i% math.ceil(num_iters/10) == 0:打印10次，如iters=100，i分别在0,10..
 ```
 # plot cost versus iteration 
 fig, (ax1, ax2) = plt.subplots(1, 2, constrained_layout=True, figsize=(12,4)) ax1.plot(J_hist[:100]) 
-ax2.plot(1000 + np.arange(len(J_hist[1000:])), J_hist[1000:]) ax1.set_title("Cost vs. iteration(start)"); ax2.set_title("Cost vs. iteration (end)") ax1.set_ylabel('Cost') ; ax2.set_ylabel('Cost') ax1.set_xlabel('iteration step') ; ax2.set_xlabel('iteration step') plt.show()
+ax2.plot(1000 + np.arange(len(J_hist[1000:])), J_hist[1000:]) 
+ax1.set_title("Cost vs. iteration(start)"); ax2.set_title("Cost vs. iteration (end)") 
+ax1.set_ylabel('Cost') ; ax2.set_ylabel('Cost') 
+ax1.set_xlabel('iteration step') ; ax2.set_xlabel('iteration step') 
+plt.show()
 ```
+fig,ax=plt.subplots(nrows,ncols,..)

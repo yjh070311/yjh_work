@@ -5,4 +5,7 @@ bump off 谋杀
 discourage 阻止，使泄气
 out of your mind 疯了
 escalator 自动扶梯
-ascend v.
+ascend v.上升
+rugged terrain 崎岖地带
+blend .. with 结合
+

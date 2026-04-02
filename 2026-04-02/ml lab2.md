@@ -40,3 +40,4 @@ fig, ax, dyn_items = plt_stationary(x_train, y_train)
 updater = plt_update_onclick(fig, ax, x_train, y_train, dyn_items)
 ```
 plt.close():- 清理之前打开的图形，释放内存,更干净，其他是自定义函数，创建图形：窗口容器；ax：坐标系；dyn_items：动态元素，可更新
+updater = plt_update_onclick(fig, ax, x_train, y_train, dyn_items)作用：创建一个点击交互更新器

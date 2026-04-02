@@ -8,4 +8,4 @@ escalator 自动扶梯
 ascend v.上升
 rugged terrain 崎岖地带
 blend .. with 结合
-
+plethora of n.太多

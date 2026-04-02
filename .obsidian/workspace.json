@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-03-30/ml.md",
+                "file": "2026-04-02/ml lab2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ml"
+              "title": "ml lab2"
             }
           }
         ]
@@ -197,6 +197,7 @@
   },
   "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
+    "2026-03-30/ml.md",
     "2026-04-01/ml.md",
     "2026-04-02/ml lab2.md",
     "2026-04-02/ml lab1.md",
@@ -213,7 +214,6 @@
     "2026-04-02",
     "未命名.md",
     "2026-03-31/plan.md",
-    "2026-03-30/ml.md",
     "2026-03-30/pid.md",
     "2026-03-30/plan.md",
     "未命名",

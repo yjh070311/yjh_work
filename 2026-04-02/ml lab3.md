@@ -111,4 +111,5 @@ num_iters：迭代次数iteration迭代
 w = copy.deepcopy(w_in)  avoid modifying global w_in，深拷贝避免修改全局变量
 两个历史数组后续绘制图形用
 math.ceil 取整函数
-if i% math.ceil(num_iters/10) == 0:打印10次，如
+if i% math.ceil(num_iters/10) == 0:打印10次，如iters=100，i分别在0,10..90次打印
+下降开始快，后导数变小下降慢

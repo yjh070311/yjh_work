@@ -13,4 +13,5 @@ print(f"x_train.shape: {x_train.shape}")
 m = x_train.shape[0]
 print(f"Number of training examples is: {m}")
 ```
-numpy数组.shape参数，x_train.shape
+numpy数组.shape参数，x_train.shape,每个元素表示一个维度，例如（500,4）表示5行4列
+这里

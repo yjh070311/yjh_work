@@ -94,3 +94,5 @@ plt.show()
 ```
 调用之前定义的函数，计算模型的预测值
 - **`label='Our Prediction'`**：图例标签，显示"我们的预测"
+plt.legend()- 自动读取 `plt.plot()` 和 `plt.scatter()` 中的 `label` 参数
+- 在图表上显示一个图例框，说明不同颜色/标记的含义

@@ -71,3 +71,24 @@ def compute_model_output(x, w, b):
 m获取样本训练的数量
 f_wb创建一个全是 0 的 NumPy 数组，计算每个样本的结果
 np.zeros(m)创建长度为 m 的全是0一维数组
+循环计算
+
+调用函数并输出
+```
+tmp_f_wb = compute_model_output(x_train, w, b,)
+
+# 画出模型的预测
+plt.plot(x_train, tmp_f_wb, c='b',label='Our Prediction')
+
+# 画出数据点
+plt.scatter(x_train, y_train, marker='x', c='r',label='Actual Values')
+
+# 设置标题
+plt.title("Housing Prices")
+# 设置y轴标签
+plt.ylabel('Price (in 1000s of dollars)')
+# 设置x轴标签
+plt.xlabel('Size (1000 sqft)')
+plt.legend()
+plt.show()
+```

@@ -35,5 +35,6 @@ plt.ylabel('Price (in 1000s of dollars)')
 plt.xlabel('Size (1000 sqft)')
 plt.show()
 ```
-
+plt.scatter :（x,y,maker形状，c颜色)
+plt.title()
 

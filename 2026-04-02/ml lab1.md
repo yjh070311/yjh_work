@@ -1,3 +1,4 @@
+#调整我，
 ## 1.数据集
 ```
 x_train = np.array([1.0, 2.0])
@@ -38,4 +39,5 @@ plt.show()
 plt.scatter :（x,y,maker形状，c颜色)
 plt.title("标题")
 plt.x/ylabel('x/y轴标签‘)
-plt.sho
+plt.show显示
+

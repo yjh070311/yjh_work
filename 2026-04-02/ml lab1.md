@@ -1,4 +1,4 @@
-1.数据集
+## 1.数据集
 ```
 x_train = np.array([1.0, 2.0])
 y_train = np.array([300.0, 500.0])
@@ -6,7 +6,7 @@ print(f"x_train = {x_train}")
 print(f"y_train = {y_train}")
 ```
 np.array，[]内是元素个数，()内是维度个数，此处是两个元素一个维度，若是一维数组（此处），则输出（2，）表示两个元素，若是二维数组，要有两个中括号，则表示几个维度，每个维度有多少元素，总是（第一个括号内的中括号个数，第二个【】的特征数
-2.训练例子的数量m
+## 2.训练例子的数量m
 
 ```
 # m is the number of training examples
@@ -14,4 +14,6 @@ print(f"x_train.shape: {x_train.shape}")
 m = x_train.shape[0]
 print(f"Number of training examples is: {m}")
 ```
-numpy数组.shape参数，x_train.shape,每个元素表示一个维度，例如（500,4）表示500个样本，每个样本四个特征
+numpy数组.shape参数，x_train.shape,每个元素表示一个维度，例如（500,4）表示500个样本，每个样本四个特征，
+因为x_train是数组也可以用len（）函数计算m
+## 

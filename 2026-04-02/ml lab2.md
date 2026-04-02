@@ -32,4 +32,4 @@ def compute_cost(x, y, w, b):
 
     return total_cost
 ```
-与lab1的f(w,b)大致相同，多了计算cost并结算所有样本平方误差cost_sum
+与lab1的f(w,b)大致相同，多了计算cost并结算所有样本平方误差cost_sum,根据公式得出total_cost

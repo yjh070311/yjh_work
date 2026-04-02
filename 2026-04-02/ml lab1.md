@@ -16,4 +16,13 @@ print(f"Number of training examples is: {m}")
 ```
 numpy数组.shape参数，x_train.shape,每个元素表示一个维度，例如（500,4）表示500个样本，每个样本四个特征，
 因为x_train是数组也可以用len（）函数计算m
-## 
+## 3.训练实例
+```
+
+i = 0 # Change this to 1 to see (x^1, y^1)
+
+x_i = x_train[i]
+y_i = y_train[i]
+print(f"(x^({i}), y^({i})) = ({x_i}, {y_i})")
+(x^(0), y^(0)) = (1.0, 300.0)
+```

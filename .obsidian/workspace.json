@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-04-02/pid.md",
+                "file": "2026-04-02/plan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pid"
+              "title": "plan"
             }
           }
         ]
@@ -195,10 +195,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "65a5a1fe345b1853",
+  "active": "60aba13158fbb61d",
   "lastOpenFiles": [
-    "待学，做.md",
     "2026-04-02/pid.md",
+    "待学，做.md",
     "2026-04-02/english.md",
     "2026-04-02/ml lab2.md",
     "2026-04-02/ml lab3.md",

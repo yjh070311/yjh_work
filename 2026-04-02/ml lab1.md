@@ -36,5 +36,6 @@ plt.xlabel('Size (1000 sqft)')
 plt.show()
 ```
 plt.scatter :（x,y,maker形状，c颜色)
-plt.title()
-
+plt.title("标题")
+plt.x/ylabel('x/y轴标签‘)
+plt.sho

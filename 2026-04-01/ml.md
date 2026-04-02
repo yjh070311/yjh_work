@@ -17,3 +17,5 @@ want min J(w,b)
 最终
 w=w-α/m×(f(w,b)-y)×x
 b同理没最后的x，由微积分得到
+
+batch gradient decent每一步

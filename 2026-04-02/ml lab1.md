@@ -92,3 +92,4 @@ plt.xlabel('Size (1000 sqft)')
 plt.legend()
 plt.show()
 ```
+调用之前定义的函数，计算模型的预测值

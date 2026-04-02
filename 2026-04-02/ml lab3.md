@@ -51,4 +51,6 @@ def compute_gradient(x, y, w, b):
 ```
 1.线性模型f(w,b)
 2.成本函数J(w,b)
-3.梯度下降w=w-α
+3.梯度下降w=w-α×J对w的导数，b同理
+4.计算两个偏导数
+computer_gra

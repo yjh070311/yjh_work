@@ -39,4 +39,4 @@ plt.close('all')
 fig, ax, dyn_items = plt_stationary(x_train, y_train) 
 updater = plt_update_onclick(fig, ax, x_train, y_train, dyn_items)
 ```
-plt.close()
+plt.close():- 清理之前打开的图形，释放内存,更干净，其他是自定义函数

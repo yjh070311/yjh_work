@@ -107,3 +107,4 @@ def gradient_descent(x, y, w_in, b_in, alpha, num_iters, cost_function, gradient
  
     return w, b, J_history, p_history #return w and J,w history for graphing
 ```
+num_iters：迭代次数

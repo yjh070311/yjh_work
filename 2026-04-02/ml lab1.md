@@ -67,4 +67,4 @@ def compute_model_output(x, w, b):
         
     return f_wb
 ```
-计算线性模型的预测值，m
+计算给定w，b线性模型的预测值，m

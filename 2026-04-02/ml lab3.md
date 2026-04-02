@@ -109,3 +109,4 @@ def gradient_descent(x, y, w_in, b_in, alpha, num_iters, cost_function, gradient
 ```
 num_iters：迭代次数
 w = copy.deepcopy(w_in)  avoid modifying global w_in，深拷贝避免修改全局变量
+两个历史数组后续绘制图形用

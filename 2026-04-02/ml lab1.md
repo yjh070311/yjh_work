@@ -7,3 +7,10 @@ print(f"y_train = {y_train}")
 ```
 2.训练例子的数量m
 
+```
+# m is the number of training examples
+print(f"x_train.shape: {x_train.shape}")
+m = x_train.shape[0]
+print(f"Number of training examples is: {m}")
+
+```

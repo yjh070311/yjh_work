@@ -42,3 +42,11 @@ plt.title("标题")
 plt.x/ylabel('x/y轴标签‘)
 plt.show显示
 
+## 5.模型功能
+```
+w = 100
+b = 100
+print(f"w: {w}")
+print(f"b: {b}")
+```
+初始化w，b

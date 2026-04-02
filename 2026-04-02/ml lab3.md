@@ -54,4 +54,4 @@ def compute_gradient(x, y, w, b):
 3.梯度下降w=w-α×J对w的导数，b同理
 4.计算两个偏导数
 computer_gradient实现（4），lab2的computer_cost实现（2）
-w.r.t:with respect to
+w.r.t:with respect to,ru==如J(wb)w.r.tb

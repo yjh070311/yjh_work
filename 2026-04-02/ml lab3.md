@@ -127,3 +127,4 @@ fig（画布）,ax=plt.subplots(nrows行数,ncols列数,figsize图形大小，co
 axes：包含ncols个axes对象的一维数组
 subplot:创建子图ax1，ax2
 ax.plot()绘制折线图
+np.arange创建数值序列类似于range（），一个参数是stop

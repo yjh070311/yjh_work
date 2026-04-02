@@ -123,6 +123,6 @@ ax1.set_ylabel('Cost') ; ax2.set_ylabel('Cost')
 ax1.set_xlabel('iteration step') ; ax2.set_xlabel('iteration step') 
 plt.show()
 ```
-fig,ax=plt.subplots(nrows行数,ncols列数,figsize图形大小，constrained_layput=True自动调整间距)
+fig（画布）,ax=plt.subplots(nrows行数,ncols列数,figsize图形大小，constrained_layput=True自动调整间距)
 axes：包含ncols个axes对象的一维数组
-subplot:创建子图
+subplot:创建子图ax1，ax2

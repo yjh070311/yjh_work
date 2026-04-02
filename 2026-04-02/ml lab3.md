@@ -124,3 +124,4 @@ ax1.set_xlabel('iteration step') ; ax2.set_xlabel('iteration step')
 plt.show()
 ```
 fig,ax=plt.subplots(nrows行数,ncols列数,figsize图形大小，constrained_layput=True自动调整间距)
+axes：包含ncols个axes对象的一维数组

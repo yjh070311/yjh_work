@@ -93,3 +93,4 @@ plt.legend()
 plt.show()
 ```
 调用之前定义的函数，计算模型的预测值
+- **`label='Our Prediction'`**：图例标签，显示"我们的预测"

@@ -24,3 +24,16 @@ y_i = y_train[i]
 print(f"(x^({i}), y^({i})) = ({x_i}, {y_i})")
 ```
 ## 4.绘制数据
+```
+# Plot the data points
+plt.scatter(x_train, y_train, marker='x', c='r')
+# Set the title
+plt.title("Housing Prices")
+# Set the y-axis label
+plt.ylabel('Price (in 1000s of dollars)')
+# Set the x-axis label
+plt.xlabel('Size (1000 sqft)')
+plt.show()
+```
+
+

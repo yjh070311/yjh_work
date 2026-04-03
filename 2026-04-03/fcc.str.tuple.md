@@ -40,4 +40,4 @@ sum（，start）函数将迭代函数所有值相加，start是参数不是inde
 
 ## lambda
 处理map类高阶函数使用anonymous（匿名）的高阶函数
-lambda 
+lambda 参数：表达式

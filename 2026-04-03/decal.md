@@ -5,4 +5,6 @@ fish友好
 ## shell commands
 flag命令的变体
 man帮助命令用法
-cd 
+cd change dir
+mkdir 创建目录
+cat comcatemate

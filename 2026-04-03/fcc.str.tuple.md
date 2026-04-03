@@ -26,3 +26,10 @@ list（range（））创建列表
 range只接受整数作为参数
 enumerate（os列表，起始值）枚举，返回每个项是包含（计数，元素）的元组
 zip（list1，list2），两者组合成一个元素，输出元组组合成的列表
+```
+words = ['tree', 'sky', 'mountain', 'river', 'cloud', 'sun'] 
+def is_long_word(word): 
+	return len(word) > 4 
+	long_words = list(filter(is_long_word, words)) 
+print(long_words) # ['mountain', 'river', 'cloud']
+```

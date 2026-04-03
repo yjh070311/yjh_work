@@ -4,3 +4,5 @@ bash,zsh,fish
 fish友好
 ## shell commands
 flag命令的变体
+man帮助命令用法
+cd 

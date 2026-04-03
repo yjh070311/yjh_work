@@ -1,3 +1,4 @@
+## str
 str.upper()大写
 str.lower
 extend添加列表
@@ -10,5 +11,9 @@ sort（）排序，改变原有
 sorted（）输出新的
 reverse（）反转
 index（元素）寻找该元素索引
-developer = ('Alice', 34, 'Rust Developer') name, *rest = developer print(name) # 'Alice' print(rest) # [34, 'Rust Developer']
+developer = ('Alice', 34, 'Rust Developer') 
+name, \*rest = developer 
+print(name) # 'Alice' 
+print(rest) # [34, 'Rust Developer']
 
+\*收集剩余元素

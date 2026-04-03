@@ -39,4 +39,4 @@ map函数同理，它对一个可迭代函数应用到其每个元素
 sum（，start）函数将迭代函数所有值相加，start是参数不是index，start是求和初始值（不在对象内）
 
 ## lambda
-处理map
+处理map类高阶函数使用anonymous（匿名）的高阶函数

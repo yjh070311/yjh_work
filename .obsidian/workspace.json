@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-04-03/fcc.str.md",
+                "file": "2026-04-03/fcc.str.tuple.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fcc.str"
+              "title": "fcc.str.tuple"
             }
           }
         ]
@@ -203,7 +203,7 @@
     "2026-04-01/english.md",
     "2026-03-30/english.md",
     "2026-04-01/ml.md",
-    "2026-04-03/fcc.str.md",
+    "2026-04-03/fcc.str.tuple.md",
     "2026-04-03/plan.md",
     "2026-04-02/plan.md",
     "2026-04-04/plan.md",

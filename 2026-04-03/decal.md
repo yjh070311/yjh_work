@@ -10,3 +10,7 @@ mkdir 创建目录
 cat ，concatemate链接所有并输出
 head，read前十行
 less ，read larger files
+move
+cp-copy
+rm-delete
+## vim

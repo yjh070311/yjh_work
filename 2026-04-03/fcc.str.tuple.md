@@ -19,4 +19,5 @@ print(rest) # [34, 'Rust Developer']
 
 \*收集剩余元素
 count（元素）元素出现次数
-index
+index（元素，起始查找位置，末查找位置）=list的
+sorted，返回新的列表

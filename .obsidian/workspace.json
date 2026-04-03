@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-04-03/plan.md",
+                "file": "2026-04-03/py.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "plan"
+              "title": "py"
             }
           }
         ]
@@ -195,10 +195,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "60aba13158fbb61d",
+  "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
-    "2026-04-02/plan.md",
     "2026-04-03/plan.md",
+    "2026-04-03/py.md",
+    "2026-04-02/plan.md",
     "2026-04-04/plan.md",
     "2026-04-04",
     "2026-04-02/pid.md",
@@ -226,7 +227,6 @@
     "model/00-晨思.md",
     "2026-03-31/linux.md",
     "model/01-plan.md",
-    "model/02-复盘.md",
     "未命名.base",
     "model",
     "新建 文本文档.txt"

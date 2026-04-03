@@ -17,5 +17,7 @@ rm-delete
 ./，bash，执行脚本
 ./需要脚本有可执行权限（chmod +x）
  会根据脚本**第一行**的 shebang（`#!`）指定的解释器来执行
-  例如：`#!/bin/bash` 会用 bash 执行，`#!/usr/bin/env python3` 会用 Python 执行
+  例如：#!/bin/bash` 会用 bash 执行，#!/usr/bin/env python3 会用 Python 执行
   bash功能丰富，强制执行
+  echo输出文本，-e转义字符，-n不换行输出
+  

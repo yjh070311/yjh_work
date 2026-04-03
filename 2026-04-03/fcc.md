@@ -1,1 +1,0 @@
-[Understanding Variables and Data Types - What Are Common Data Types in Python and How Do You Get the Type of a Variable? | Learn | freeCodeCamp.org](https://www.freecodecamp.org/learn/python-v9/lecture-understanding-variables-and-data-types/what-are-common-data-types-in-python-and-how-do-you-get-the-type-of-a-variable)

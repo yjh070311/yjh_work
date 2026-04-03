@@ -7,4 +7,6 @@ flag命令的变体
 man帮助命令用法
 cd change dir
 mkdir 创建目录
-cat comcatemate
+cat ，concatemate链接所有并输出
+head，read前十行
+less ，read larger files

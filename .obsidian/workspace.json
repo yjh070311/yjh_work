@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-04-03/py.md",
+                "file": "2026-04-03/fcc.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "py"
+              "title": "fcc"
             }
           }
         ]
@@ -199,7 +199,7 @@
   "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
     "2026-04-03/plan.md",
-    "2026-04-03/py.md",
+    "2026-04-03/fcc.md",
     "2026-04-02/plan.md",
     "2026-04-04/plan.md",
     "2026-04-04",

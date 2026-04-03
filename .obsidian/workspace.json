@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-04-02/english.md",
+                "file": "2026-04-03/未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "english"
+              "title": "未命名"
             }
           }
         ]
@@ -197,6 +197,8 @@
   },
   "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
+    "2026-04-02/english.md",
+    "2026-04-03/未命名.md",
     "2026-04-01/english.md",
     "2026-03-30/english.md",
     "2026-04-01/ml.md",
@@ -207,7 +209,6 @@
     "2026-04-04",
     "2026-04-02/pid.md",
     "待学，做.md",
-    "2026-04-02/english.md",
     "2026-04-02/ml lab2.md",
     "2026-04-02/ml lab3.md",
     "2026-04-01/plan.md",
@@ -226,7 +227,6 @@
     "2026-03-31/ros.md",
     "model/00-晨思.md",
     "2026-03-31/linux.md",
-    "model/01-plan.md",
     "未命名.base",
     "model",
     "新建 文本文档.txt"

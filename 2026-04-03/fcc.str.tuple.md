@@ -24,3 +24,4 @@ sorted，返回新的列表，可以自定义变量的排序行为
 ## loop循环
 list（range（））创建列表
 range只接受整数作为参数
+enumerate（）

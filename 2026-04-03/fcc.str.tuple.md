@@ -11,9 +11,12 @@ sort（）排序，改变原有
 sorted（）输出新的
 reverse（）反转
 index（元素）寻找该元素索引
+## tuple
 developer = ('Alice', 34, 'Rust Developer') 
 name, \*rest = developer 
 print(name) # 'Alice' 
 print(rest) # [34, 'Rust Developer']
 
 \*收集剩余元素
+count（元素）元素出现次数
+index

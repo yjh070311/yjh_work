@@ -36,4 +36,4 @@ print(long_words) # ['mountain', 'river', 'cloud']
 filte（函数不加括号，可迭代对象）用于从迭代中选择满足特定条件的元素
 函数是一个返回布尔值的函数
 map函数同理，它对一个可迭代函数应用到其每个元素
-sum（，start）函数将迭代函数所有值相加，start是参数不是index，start是求和初始值（不在
+sum（，start）函数将迭代函数所有值相加，start是参数不是index，start是求和初始值（不在对象内）

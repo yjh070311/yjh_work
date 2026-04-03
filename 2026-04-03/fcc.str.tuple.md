@@ -33,4 +33,5 @@ def is_long_word(word):
 long_words = list(filter(is_long_word, words)) 
 print(long_words) # ['mountain', 'river', 'cloud']
 ```
-filter函数用于从迭代中选择满足特定条件的元素
+filte（函数不加括号，可迭代对象）用于从迭代中选择满足特定条件的元素
+函数是一个返回布尔值的函数

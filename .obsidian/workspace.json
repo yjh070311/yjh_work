@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-04-03/未命名.md",
+                "file": "2026-04-03/english.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "english"
             }
           }
         ]
@@ -198,7 +198,7 @@
   "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
     "2026-04-02/english.md",
-    "2026-04-03/未命名.md",
+    "2026-04-03/english.md",
     "2026-04-01/english.md",
     "2026-03-30/english.md",
     "2026-04-01/ml.md",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "待学，做.md",
+                "file": "2026-04-04/fcc.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "待学，做"
+              "title": "fcc"
             }
           }
         ]
@@ -198,10 +198,12 @@
   "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
     "2026-04-04/plan.md",
-    "2026-04-04/fcc.md",
-    "2026-04-03/ros.md",
     "2026-04-03/plan.md",
+    "2026-04-03/ros.md",
     "2026-04-03/fcc.str.tuple.md",
+    "2026-04-04/english.md",
+    "2026-04-04/fcc.md",
+    "待学，做.md",
     "2026-04-03/decal.md",
     "2026-04-02/ml lab2.md",
     "2026-04-02/english.md",
@@ -214,7 +216,6 @@
     "2026-04-01/ml.md",
     "2026-04-04",
     "2026-04-02/pid.md",
-    "待学，做.md",
     "2026-04-01/plan.md",
     "2026-03-31/plan.md",
     "2026-04-02/ml.md",
@@ -226,7 +227,6 @@
     "2026-03-30/pid.md",
     "2026-03-30/plan.md",
     "未命名",
-    "2026-03-31/english.md",
     "未命名.base",
     "model",
     "新建 文本文档.txt"

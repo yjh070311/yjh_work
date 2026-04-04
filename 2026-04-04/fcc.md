@@ -151,3 +151,13 @@ class ClassName:
 2.`self.name = 名称` ，`self.age = age`，是这些对象将拥有的属性。
 3.`def sample_method（self）：` 是每个创建对象可以调用的方法。
 4.`print（self.name.upper（））` 是 `sample_method` 方法的操作，在这里它打印的是大写字母的名称。
+
+类创建对象：
+```python
+object_1 = ClassName(attribute_1, attribute_2)
+```
+调用每个对象中定义的类中的任何方法：
+```python
+object_1.method_name()
+```
+

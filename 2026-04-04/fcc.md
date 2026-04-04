@@ -165,4 +165,10 @@ object_1.method_name()
 
 \_\_是特殊方法
 创建自己的类时，很多字符串数字的特殊方法不会自动处理
-
+要自定义特殊方法
+比如
+```python
+def __len__(self):
+       return self.pages
+```
+才能

@@ -109,3 +109,21 @@ except ValueError:
 1.记录日志（底层处理）
 2.异常上传，能够让主except进行异常处理
 这样你就可以在记录错误或清理错误的同时，继续在呼叫堆栈中传播。
+```py
+class InsufficientFundsError(Exception):
+    def __init__(self, balance, amount):
+        self.balance = balance
+        self.amount = amount
+        super().__init__(f'Insufficient funds: ${balance} available, ${amount} requested')
+
+def withdraw(balance, amount):
+    if amount > balance:
+        raise InsufficientFundsError(balance, amount)
+    return balance - amount
+
+try:
+    new_balance = withdraw(100, 150)
+except InsufficientFundsError as e:
+    print(f'Transaction failed: {e}')
+```
+可以通过定义自己的例外类来创建和提出自定义异常

@@ -177,3 +177,4 @@ def __len__(self):
 getattr（对象，属性名，默认值）读取属性，如果不存在该属性，除非你提供默认值，否则会触发 `AttributeError`
 dir（）返回对象上所有属性名称的列表
 os.特殊方法也是属性
+setattr()

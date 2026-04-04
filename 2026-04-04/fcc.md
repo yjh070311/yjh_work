@@ -76,3 +76,16 @@ finally:
     pass
 可以把except定义成元组，在一个字句捕捉多个except
 更简洁，作用跟分开一样
+
+raise语句可以设置内置异常或创建自定义错误消息
+```py
+def check_age(age):
+    if age < 0:
+        raise ValueError('Age cannot be negative')
+    return age
+
+try:
+    check_age(-5)
+except ValueError as e:
+    print(f'Error: {e}') # Error: Age cannot be negative
+```

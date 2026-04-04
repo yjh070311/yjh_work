@@ -104,4 +104,8 @@ try:
 except ValueError:
     print('Handled at higher level')
 ```
-重新抛出（re-raise)机制
+重新抛出（re-raise)机制，
+函数作用
+1.记录日志（底层处理）
+2.异常上传，能够让主except进行异常处理
+这样你就可以在记录错误或清理错误的同时，继续在呼叫堆栈中传播。

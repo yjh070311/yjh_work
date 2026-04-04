@@ -44,4 +44,5 @@ attributeerror 尝试使用该数据类型不存在的方法或属性
 
 *调试方法*
 1.print
-2.模块pdb.se
+2.模块pdb.set_trace
+(pdb) wha

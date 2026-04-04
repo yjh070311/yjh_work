@@ -182,3 +182,4 @@ hasattr（对象，属性）检查属性是否存在
 delattr（对象，属性）动态移除一个数
 
 ## oop
+encapsulation封装

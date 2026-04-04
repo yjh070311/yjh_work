@@ -35,9 +35,13 @@ if __name__ == '__main__':
 这个条件判断的作用是：**只有当脚本被直接运行时，才执行里面的代码；如果被导入，则不执行。**
 可以用来在当前文件执行测试代码，当我需要把此文件的函数用到其他文件中时，测试代码不会发生
 
-## error message
+## error
 syntaxerror 语法， Python 不理解你的代码，或者你的逻辑与你处理的数据不匹配时。
 nameerror  当 Python 找不到该名称的变量时
 typeerror  试对不兼容的数据类型执行操作
 indexerror 试图访问列表中不存在的索引
 attributeerror 尝试使用该数据类型不存在的方法或属性
+
+*调试方法*
+1.print
+2.模块pdb.se

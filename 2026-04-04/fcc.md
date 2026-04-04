@@ -59,3 +59,19 @@ try:
 except ZeroDivisionError:
     print("You can't divide by zero!")
 ```
+try:
+    # 可能发生异常的代码
+    pass
+except 异常类型1:
+    # 发生异常类型1时的处理代码
+    pass
+except 异常类型2:
+    # 发生异常类型2时的处理代码
+    pass
+else:
+    # 没有发生异常时执行的代码
+    pass
+finally:
+    # 无论是否发生异常，都会执行的代码（如关闭文件、释放资源）
+    pass
+可以把except定义成元组，在一个字句捕捉多个except

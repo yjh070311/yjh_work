@@ -10,5 +10,5 @@ pizza.update({ 'price': 15, 'total_time': 25 })
 for product in enumerate(products):
     print(product)
 返回（index，product）元组
-enu（products.items())
+enu（products.items()，可加参数表示index起始值)
 返回索引＋元组

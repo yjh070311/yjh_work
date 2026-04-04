@@ -160,4 +160,5 @@ object_1 = ClassName(attribute_1, attribute_2)
 ```python
 object_1.method_name()
 ```
+类是模版。对象是模版创建的具体实例
 

@@ -47,3 +47,6 @@ attributeerror 尝试使用该数据类型不存在的方法或属性
 2.模块pdb.set_trace
 (pdb) whatis 查看元素类型
 (pdb) continue 继续运行代码
+3.ide工具
+f5继续
+f10

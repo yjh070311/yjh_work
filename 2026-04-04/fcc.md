@@ -126,4 +126,6 @@ try:
 except InsufficientFundsError as e:
     print(f'Transaction failed: {e}')
 ```
-可以通过定义自己的例外类来创建和提出自定义异常
+可以通过定义自己的例外类来创建和提出自定义异常、
+raise NewError()：想完全隐藏底层细节
+raise NewError() from None：

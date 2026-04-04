@@ -137,3 +137,14 @@ raise可以让你的代码更可预测、更容易调试，同时给用户清晰
 
 ## class
 构建一个类来定义共享行为，然后创建使用这些行为的对象。
+class的基本语法：
+```python
+class ClassName:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def sample_method(self):               
+        print(self.name.upper())
+```
+`__init__` 的第一个参数总是指向被创建或使用的具体对象。按照惯例，这个参数被命名为 `self`，但从技术上讲，你可以使用任何名字。`Self` 允许你访问对象自身的属性和方法。

@@ -131,4 +131,5 @@ raise NewError()：想完全隐藏底层细节
 raise NewError() from None：不想暴露内部实现（你的代码中对 FileNotFoundError 的处理）
 raise NewError() from e：调试时想看到完整原因（你的代码中对 ValueError 的处理）
 assert 条件，错误语句
-类似，
+类似，有条件的错误
+raise可以让你的代码更可预测、更容易调试，同时给用户清晰反馈出了什么问题

@@ -90,4 +90,18 @@ except ValueError as e:
     print(f'Error: {e}') # Error: Age cannot be negative
 ```
 raise用于有特殊要求的地方，正常程序无法找出，这个错误本来无法得知，但raise提供条件让这个错误可以被定义并找出。后续用在except的错误排查中
+```py
+def process_data(data):
+    try:
+        result = int(data)
+        return result * 2
+    except ValueError:
+        print('Logging: Invalid data received')
+        raise  # Re-raises the same ValueError
 
+try:
+    process_data('abc')
+except ValueError:
+    print('Handled at higher level')
+```
+重新抛出（re-raise)机制

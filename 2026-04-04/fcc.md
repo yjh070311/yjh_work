@@ -195,3 +195,4 @@ abstraction抽象
 
 ## getter，setter
 Getter 和 setter 是可以控制类属性如何访问和修改的方法。用 getter 你获取一个值，而用 setter 则是设置一个值。
+用property而不是方法：这主要是关于可读性和惯例。它们让你的代码更简洁、更易读。作用类似方法，工作方式类似数据

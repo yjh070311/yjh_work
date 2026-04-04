@@ -49,4 +49,7 @@ attributeerror 尝试使用该数据类型不存在的方法或属性
 (pdb) continue 继续运行代码
 3.ide工具
 f5继续
-f10
+f10步进
+f11进入函数
+*exception handling*
+异常处理是指在程序执行过程中捕捉和管理错误的过程，以确保你的代码不会意外崩溃。

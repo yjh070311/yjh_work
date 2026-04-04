@@ -53,3 +53,9 @@ f10步进
 f11进入函数
 *exception handling*
 异常处理是指在程序执行过程中捕捉和管理错误的过程，以确保你的代码不会意外崩溃。
+```py
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+```

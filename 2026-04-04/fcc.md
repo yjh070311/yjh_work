@@ -1,3 +1,4 @@
+## dic
 dict([一系列元组])
 .get(key,default)如果查找不到返回default
 .keys,.values分别返回包含字典中所有键和值的视图对象
@@ -12,3 +13,7 @@ for product in enumerate(products):
 返回（index，product）元组
 enu（products.items()，可加参数表示index起始值)
 返回索引＋元组
+
+## sets
+大括号用，分割
+无序不存储重复数值

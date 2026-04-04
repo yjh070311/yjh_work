@@ -17,3 +17,7 @@ enu（products.items()，可加参数表示index起始值)
 ## sets
 大括号用，分割
 无序不存储重复数值
+.add添加
+.remove/.dicard移除
+.clear
+可以执行常见的数学集合运算

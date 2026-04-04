@@ -21,3 +21,5 @@ enu（products.items()，可加参数表示index起始值)
 .remove/.dicard移除
 .clear
 可以执行常见的数学集合运算
+.issubset（）/.issuperset（）方法分别检查一个集合是另一个集合的子集还是超集。
+.isjoint(）是否互斥没有任何共同元素

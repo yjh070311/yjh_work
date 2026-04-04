@@ -194,3 +194,4 @@ abstraction抽象
 4.若要访问得在封装时自定义方法
 
 ## getter，setter
+Getter 和 setter 是可以控制类属性如何访问和修改的方法。用 getter 你获取一个值，而用 setter 则是设置一个值。

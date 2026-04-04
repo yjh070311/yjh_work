@@ -90,3 +90,4 @@ except ValueError as e:
     print(f'Error: {e}') # Error: Age cannot be negative
 ```
 raise用于有特殊要求的地方，正常程序无法找出，这个错误本来无法得知，但raise提供条件让这个错误可以被定义并找出。后续用在except的错误排查中
+

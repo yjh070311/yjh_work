@@ -147,4 +147,7 @@ class ClassName:
     def sample_method(self):               
         print(self.name.upper())
 ```
-`__init__` 的第一个参数总是指向被创建或使用的具体对象。按照惯例，这个参数被命名为 `self`，但从技术上讲，你可以使用任何名字。`Self` 允许你访问对象自身的属性和方法。
+1.`__init__` 的第一个参数总是指向被创建或使用的具体对象。按照惯例，这个参数被命名为 `self`，但从技术上讲，你可以使用任何名字。`Self` 允许你访问对象自身的属性和方法。
+2.`self.name = 名称` ，`self.age = age`，是这些对象将拥有的属性。
+3.`def sample_method（self）：` 是每个创建对象可以调用的方法。
+4.`print（self.name.upper（））` 是 `sample_method` 方法的操作，在这里它打印的是大写字母的名称。

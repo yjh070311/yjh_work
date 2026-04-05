@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-04-04/fcc.md",
+                "file": "2026-04-04，05/fcc.md",
                 "mode": "source",
                 "source": false
               },
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "4c47644fc652b0c0",
@@ -199,7 +198,7 @@
   "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
     "2026-04-04/english.md",
-    "2026-04-04/fcc.md",
+    "2026-04-04，05/fcc.md",
     "2026-04-02/ml lab3.md",
     "2026-04-02/plan.md",
     "2026-04-03/decal.md",
@@ -207,7 +206,7 @@
     "2026-04-03/fcc.str.tuple.md",
     "2026-04-03/plan.md",
     "2026-04-03/ros.md",
-    "2026-04-04/plan.md",
+    "2026-04-04，05/plan.md",
     "2026-04-02/english.md",
     "待学，做.md",
     "2026-04-02/ml lab2.md",
@@ -215,7 +214,7 @@
     "2026-04-01/english.md",
     "2026-03-30/english.md",
     "2026-04-01/ml.md",
-    "2026-04-04",
+    "2026-04-04，05",
     "2026-04-02/pid.md",
     "2026-04-01/plan.md",
     "2026-03-31/plan.md",

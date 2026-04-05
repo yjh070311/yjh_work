@@ -263,3 +263,23 @@ print(c.__dict__) # {'_Parent__data': 'Parent data', '_Child__data': 'Child data
 通过abc模块实现：提供ABC类和@abstractmethod装饰器
 ABC是父类，但不能直接创建对象定义了一个子类必须实现的方法和属性的通用接口
 任何子类都必须覆盖该方法，才能被视为具体且可实例化，即使提供了默认实现
+基本语法：
+```py
+from abc import ABC, abstractmethod
+
+# Define an abstract base class
+class AbstractClass(ABC):
+    @abstractmethod
+    def abstract_method(self):
+        pass
+
+# Concrete subclass that implements the abstract method
+class ConcreteClassOne(AbstractClass):
+    def abstract_method(self):
+        print('Implementation in ConcreteClassOne')
+
+# Another concrete subclass
+class ConcreteClassTwo(AbstractClass):
+    def abstract_method(self):
+        print('Implementation in ConcreteClassTwo')
+```

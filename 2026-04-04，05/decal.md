@@ -16,6 +16,8 @@ rm-delete
 ls -a隐藏文件 
 pwd(print working directory)显示当前工作目录的绝对路径
 /（slash）
+less**分页查看文件内容**
+/dan==
 ## vim
 ./，bash，执行脚本
 ./需要脚本有可执行权限（chmod +x）

@@ -14,7 +14,7 @@ move
 cp-copy
 rm-delete
 ls -a隐藏文件 
-
+pwd(prin)
 ## vim
 ./，bash，执行脚本
 ./需要脚本有可执行权限（chmod +x）

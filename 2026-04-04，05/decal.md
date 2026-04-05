@@ -30,4 +30,5 @@ piping（|）将**一个命令的输出**直接作为**另一个命令的输入*
   例如：#!/bin/bash 会用 bash 执行，#!/usr/bin/env python3 会用 Python 执行
   bash功能丰富，强制执行
   echo输出文本，-e转义字符，-n不换行输出
-  
+## package
+独立的

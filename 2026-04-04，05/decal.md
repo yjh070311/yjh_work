@@ -15,6 +15,7 @@ cp-copy
 rm-delete
 ls -a隐藏文件 
 pwd(print working directory)显示当前工作目录的绝对路径
+/（slash）
 ## vim
 ./，bash，执行脚本
 ./需要脚本有可执行权限（chmod +x）

@@ -216,4 +216,13 @@ class Child(Parent):
 单一继承，因为子类恰好继承自一个父类。
 子类（父类）
 可以在子类重新定义方法覆盖父类的
-如果想暴力、
+如果想保留父类的方法，可以用super（）扩展，
+```py
+class Dog(Animal):
+    bark = 'woof! woof!! woof!!!'
+
+    # Call Animal.sound(), then append bark
+    def sound(self):
+        base = super().sound()
+        return f'{base}, then {self.name} barks {self.bark}'
+```

@@ -261,4 +261,4 @@ print(c.__dict__) # {'_Parent__data': 'Parent data', '_Child__data': 'Child data
 ## abstraction
 关注某件事做什么，而不是怎么做
 通过abc模块实现：提供ABC类和@abstractmethod装饰器
-ABC是父类，但不能直接创建对象
+ABC是父类，但不能直接创建对象定义了一个子类必须实现的方法和属性的通用接口

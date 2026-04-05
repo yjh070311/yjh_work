@@ -260,3 +260,4 @@ print(c.__dict__) # {'_Parent__data': 'Parent data', '_Child__data': 'Child data
 
 ## abstraction
 关注某件事做什么，而不是怎么做
+通过abc模块实现

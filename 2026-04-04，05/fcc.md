@@ -259,3 +259,4 @@ print(c.__dict__) # {'_Parent__data': 'Parent data', '_Child__data': 'Child data
 但如果你处理的是会继承的类，应该使用双重下划线，这样父属性就不会被覆盖。
 
 ## abstraction
+关注某件事做什么，而不是怎么做

@@ -239,3 +239,18 @@ class Amphibian(Walker, Swimmer):
 单个是建议，两个是禁止
 双重只能通过名称修饰和方法访问
 名称修饰为_父类__属性
+名称篡改的主要目的是防止在使用继承时意外覆盖属性和方法
+```py
+class Parent:
+    def __init__(self):
+        self.__data = 'Parent data'
+
+class Child(Parent):
+    def __init__(self):
+        super().__init__()
+        self.__data = 'Child data'
+
+c = Child()
+print(c.__dict__) # {'_Parent__data': 'Parent data', '_Child__data': 'Child data'}
+```
+否则， 子类会意外覆盖父数据

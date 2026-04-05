@@ -19,7 +19,8 @@ pwd(print working directory)显示当前工作目录的绝对路径
 less**分页查看文件内容**
 /单词，寻找单词的位置，n迭代，q退出
 grep 单词 文件，寻找
-
+sed 替换
+curl 查看
 ## vim
 ./，bash，执行脚本
 ./需要脚本有可执行权限（chmod +x）

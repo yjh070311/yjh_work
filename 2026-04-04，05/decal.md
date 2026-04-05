@@ -10,7 +10,7 @@ mkdir 创建目录
 cat ，concatemate链接所有并输出
 head，read前十行
 less ，read larger files
-move
+mv
 cp-copy
 rm-delete
 ls -a隐藏文件 

@@ -36,4 +36,6 @@ piping（|）将**一个命令的输出**直接作为**另一个命令的输入*
 apt install htop
 a.read package list
 b.find out what dependencies needed
-c.check what already inst
+c.check what already installed
+d.download
+e.unpack and copy the files over

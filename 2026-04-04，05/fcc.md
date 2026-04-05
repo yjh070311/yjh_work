@@ -254,3 +254,6 @@ c = Child()
 print(c.__dict__) # {'_Parent__data': 'Parent data', '_Child__data': 'Child data'}
 ```
 否则， 子类会意外覆盖父数据
+
+如果某个属性只在类内内部使用，就用一个下划线。
+但如果你处理的是会继承的类，应该使用双重下划线，这样父属性就不会被覆盖。

@@ -226,3 +226,7 @@ class Dog(Animal):
         base = super().sound()
         return f'{base}, then {self.name} barks {self.bark}'
 ```
+多重继承
+class Amphibian(Walker, Swimmer):
+
+## 

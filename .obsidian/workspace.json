@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-04-04，05/decal.md",
+                "file": "untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "decal"
+              "title": "untitled"
             }
           }
         ]
@@ -197,8 +197,9 @@
   },
   "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
-    "待学，做.md",
     "2026-04-04，05/decal.md",
+    "untitled.md",
+    "待学，做.md",
     "2026-04-03/english.md",
     "2026-04-03/fcc.str.tuple.md",
     "2026-04-03/plan.md",
@@ -225,7 +226,6 @@
     "2026-04-02",
     "未命名.md",
     "2026-03-30/pid.md",
-    "2026-03-30/plan.md",
     "未命名",
     "未命名.base",
     "model",

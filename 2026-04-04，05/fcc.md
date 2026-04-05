@@ -286,4 +286,5 @@ class ConcreteClassTwo(AbstractClass):
 
 我们实例化具体类，并调用它们的 make_sound 方法，展示它们如何以自己的方式实现 make_sound 抽象方法。
 
-子类若不提供抽象方法实现，它也是
+子类若不提供抽象方法实现，它也是一个抽象类
+抽象类——基类——子类

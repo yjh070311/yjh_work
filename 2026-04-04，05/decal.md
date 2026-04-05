@@ -34,3 +34,6 @@ piping（|）将**一个命令的输出**直接作为**另一个命令的输入*
 包是独立的软件单元
 仓库是一组包
 apt install htop
+a.read package list
+b.find out what dependencies needed
+c.check what already inst

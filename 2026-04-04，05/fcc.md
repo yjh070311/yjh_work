@@ -229,4 +229,4 @@ class Dog(Animal):
 多重继承
 class Amphibian(Walker, Swimmer):
 
-## 
+## polymorphism 多态性

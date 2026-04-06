@@ -42,4 +42,4 @@ e.unpack and copy the files over
 f.process triggers
 从镜像下载
 
-
+dependencies：稳定性，一个包依赖其他包

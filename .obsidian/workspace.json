@@ -180,8 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,10 +196,10 @@
   },
   "active": "65a5a1fe345b1853",
   "lastOpenFiles": [
+    "2026-04-06/plan.md",
+    "2026-04-07/plan.md",
     "待学，做.md",
     "2026-04-06/力扣.groupAnagrams.md",
-    "2026-04-07/plan.md",
-    "2026-04-06/plan.md",
     "2026-04-04，05/fcc.md",
     "2026-04-04，05/decal.md",
     "2026-04-04，05/plan.md",

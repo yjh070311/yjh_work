@@ -1,0 +1,26 @@
+```python
+class Solution(object):
+
+    def groupAnagrams(self, strs):
+
+        hash=defaultdict(list)
+
+        for word in strs:
+
+            sorted_word=''.join(sorted(word))
+
+            hash[sorted_word].append(word)
+
+  
+        return list(hash.values())
+class Solution(object):
+    def groupAnagrams(self, strs):
+        hash=defaultdict(list)
+        for word in strs:
+            count=[0]*26
+            for ch in word:
+                count[ord(ch)-ord('a')]+=1
+            hash[tuple(count)].append(word)
+            return list(hash.values())
+            
+```

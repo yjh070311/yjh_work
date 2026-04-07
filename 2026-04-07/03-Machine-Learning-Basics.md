@@ -26,7 +26,6 @@
 - 吴恩达机器学习课程（Coursera）
 - 《机器学习》周志华
 - scikit-learn 官方文档
-
-
+[【官方中英】2025年公认最好的【吴恩达机器学习课程】附课件、代码及实战项目！！！--人工智能/机器学习/深度学习-yjhcsb-稍后再看-哔哩哔哩视频](https://www.bilibili.com/list/watchlater/?bvid=BV1owrpYKEtP&oid=113769053358965&watchlater_cfg=%7B%22viewed%22%3A0,%22key%22%3A%22%22,%22asc%22%3Afalse%7D&spm_id_from=333.881.0.0&vd_source=5e1b2f4cab00107315f393c8a9614a8a&p=16)
 ---
 *此文件由 yjh 🦞 自动创建 | 最后更新：2026-04-06*

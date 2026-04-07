@@ -118,6 +118,15 @@ left,right有序
 重叠子问题，最优子结构（最优解包含子问题的最优解）
 爬楼梯用递归复杂度呈指数级增长
 
+图（graph）适用于表示对象之间联系的数据结构
+由节点和边组成
+边（edge）是节点之间的连接
+无向图（undirected graph）没有特定方向，反之，有向图
+顶点标记图（vertex labeled graph),除数据外，还关联tag，用于识别节点，可视化表示他们
+循环图（cyclic graph）沿着edge走会回到初始节点
+edge labeled graph edge上有tag
+加权图（weighted graph）edge上的tag用于算数运算，有些权重高，这些权重代表了edge的cost
+
 
 
 ## ✅ 完成内容

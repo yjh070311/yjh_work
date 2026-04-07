@@ -108,8 +108,11 @@ def merge_sort(arr):
     return sorted_list
 ```
 merge_sort 递归调用自己，直到单个有序直接输出
-
+每次循环把小的轮流放入
 left,right有序
+先拆分再合并
+一分为二O（logn），合并遍历O（n）
+新的sorted列表，空间O（n）
 
 
 

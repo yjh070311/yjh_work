@@ -126,6 +126,10 @@ left,right有序
 循环图（cyclic graph）沿着edge走会回到初始节点
 edge labeled graph edge上有tag
 加权图（weighted graph）edge上的tag用于算数运算，有些权重高，这些权重代表了edge的cost
+有向无环图，有方向没循环
+断开图（disconnect）有没有edge连接的
+
+
 
 
 

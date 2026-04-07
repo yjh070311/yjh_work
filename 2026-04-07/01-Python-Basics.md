@@ -67,6 +67,15 @@ map（ADT）具体高效管理键值并操作
 使用哈希函数为每个元素生成哈希值，基于键生成，其对应数组是存储键值对的数据结构
 两个键得到相同索引（碰撞），使用链式策略，将索引元素存储在链表中
 “开放寻址”用搜索序列搜索下一个可用索引
+hash_table = [None] * 8
+
+def set_item(key, value):
+    index = hash(key) % len(hash_table)
+    # 如果该位置已被占用（碰撞发生）
+    while hash_table[index] is not None:
+        # 线性探测：找下一个空位
+        index = (index + 1) % len(hash_table)
+    hash_table[index] = (key, value)
 一般O（1）
 py的词典就是hash map
 

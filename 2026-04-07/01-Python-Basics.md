@@ -4,13 +4,14 @@
 2026-04-07 15:15-16:50 (1h35m)
 
 ## 🎯 学习目标
-- 理解 Python 变量的定义和使用
-- 掌握数据类型（int, float, str, bool, list, dict）
-- 学习控制流程（if/else, for 循环，while 循环）
-- 完成一个小练习：简易计算器或猜数字游戏
+- working with  common data structures
+- learn arrays,stacks,queues and linked list
+- 
+
 
 ## 📝 学习过程
 <!-- 在这里记录你的学习过程、遇到的问题、解决方案 -->
+算法特征：有限步骤，每一步第一精确，高效和明确
 
 
 ## ✅ 完成内容
@@ -23,7 +24,7 @@
 
 ## 🔗 参考资料
 <!-- 用到的教程、文档链接 -->
-
+[Python 认证 |freeCodeCamp.org --- Python Certification | freeCodeCamp.org](https://www.freecodecamp.org/learn/python-v9#lecture-working-with-common-data-structures)
 
 ---
 *此文件由 yjh 🦞 自动创建 | 最后更新：2026-04-06*

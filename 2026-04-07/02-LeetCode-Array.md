@@ -57,7 +57,44 @@ class Solution(object):
         return max_len
 ```
 这是第一次的代码，时间复杂度n方超时，并且用字典没有集合去重效果好，而且在字典，集合搜索是哈希映射复杂度为O(1），而在列表里要遍历会变成O(n）
+```
+class Solution(object):
 
+    def longestConsecutive(self, nums):
+
+        """
+
+        :type nums: List[int]
+
+        :rtype: int
+
+        """
+
+        num_set=set(nums)
+
+        longest=0
+
+        for num in num_set:
+
+            if num-1 not in num_set:
+
+                current_len=1
+
+                current_num=num
+
+                while current_num in num_set:
+
+                    current_len+=1
+
+                    current_num+=1
+
+                longest=max(longest,current_len)
+
+  
+
+        return longest
+```
+这是最后的代码，初始最长值，找出起始点，循环判断下一个值是否在nums里，每个起始点都要初始化当前长度和当前num，然后在循环里+1，我最初代码用大小判断，可以用max（）函数更快
 
 ## ✅ 完成内容
 <!-- 列出你完成的具体内容 -->

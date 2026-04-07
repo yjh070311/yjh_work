@@ -15,11 +15,53 @@
 
 ## 📝 学习过程
 <!-- 在这里记录你的学习过程、遇到的问题、解决方案 -->
+```
+class Solution(object):
+
+    def longestConsecutive(self, nums):
+
+        """
+
+        :type nums: List[int]
+
+        :rtype: int
+
+        """
+
+        hash={}
+
+        max_len=0
+
+        for num in nums:        
+
+            if num-1  not in nums:
+
+                hash[num]=1
+
+                i=1
+
+                cur_len=1
+
+                while num+i in nums:
+
+                    i+=1
+
+                    hash[num]+=1
+
+                    cur_len+=1
+
+                if cur_len>max_len:
+
+                    max_len=cur_len
+
+        return max_len
+```
+这是第一次的代码，时间复杂度n方超时
 
 
 ## ✅ 完成内容
 <!-- 列出你完成的具体内容 -->
-- [ ] 题目 1：
+- [x] 题目 1：最长序列排序
 - [ ] 题目 2：
 - [ ] 题目 3：
 

@@ -108,6 +108,7 @@ def merge_sort(arr):
     return sorted_list
 ```
 merge_sort 递归调用自己
+left,right有序
 
 
 

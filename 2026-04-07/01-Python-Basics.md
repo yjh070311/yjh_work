@@ -27,7 +27,7 @@ O（n方）二次复杂度，嵌套循环
 用到.insert(),.pop(),.append()
 堆栈（stacks）和队列（queues）是线性数据结构，遵循特定规则来添加和移除元素
 栈是last-in,first-out(lifo)数据结构
-
+元素会
 
 
 

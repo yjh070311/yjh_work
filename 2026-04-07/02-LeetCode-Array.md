@@ -97,6 +97,35 @@ class Solution(object):
 这是最后的代码，初始最长值，找出起始点，循环判断下一个值是否在nums里，每个起始点都要初始化当前长度和当前num，然后在循环里+1，我最初代码用大小判断，可以用max（）函数更快
 
 快指针寻找不是0的位置，找到后与慢指针互换，慢指针+1
+
+```
+class Solution(object):
+
+    def moveZeroes(self, nums):
+
+        """
+
+        :type nums: List[int]
+
+        :rtype: None Do not return anything, modify nums in-place instead.
+
+        """
+
+        p_slow=0
+
+        for p_fast in range(len(nums)):
+
+            if nums[p_fast]!=0:
+
+                nums[p_slow]=nums[p_fast]
+
+                p_slow+=1
+
+        for i in range(p_slow,len(nums)):
+
+            nums[i]=0
+```
+第一遍移动非0，第二遍将剩余位置补0就行，数字循环用range，fast就不用初始化了
 ## ✅ 完成内容
 <!-- 列出你完成的具体内容 -->
 - [x] 题目 1：最长序列排序

@@ -131,6 +131,7 @@ edge labeled graph edge上有tag
 
 
 广度优先搜索（BFS-breadth first search）：图的下一层之前访问所以相邻节点
+可以用于在无加权图找最短路径，因为分析所有节点，用队列（fifo）访问过的节点先出
 
 
 

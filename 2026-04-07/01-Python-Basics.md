@@ -148,7 +148,8 @@ a分bc各自分defg
 2.弹出a访问abc栈cb，反向添加b在顶部
 3.弹出b访问abcde栈ced
 4.弹出d，e
-5.弹出c
+5.弹出c访问abcdefg栈gf
+6.弹出fg
 
 
 

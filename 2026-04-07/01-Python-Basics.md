@@ -130,6 +130,7 @@ edge labeled graph edge上有tag
 断开图（disconnect）有没有edge连接的
 
 
+广度优先搜索（BFS-breadth first search）：图的下一层之前访问所以相邻节点
 
 
 

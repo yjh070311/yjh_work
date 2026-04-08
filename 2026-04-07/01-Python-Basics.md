@@ -133,7 +133,15 @@ edge labeled graph edge上有tag
 广度优先搜索（BFS-breadth first search）：图的下一层之前访问所以相邻节点
 可以用于在无加权图找最短路径，因为分析所有节点，用队列（fifo）访问过的节点先出
 在内存中存储队列，有大量节点，空间要求大
+a分bc各自分defg
+1.访问a队列a
+2.访问abc队列bc
+3.访问abcde队列bcde
+4.访问anbcdefg队列defg
+5.逐个去队列的defg查是否有其未访问的子节点
+一层层访问
 
+深度优先搜索（DFS-depth first search）：深入跟踪每个分支再回溯
 
 
 

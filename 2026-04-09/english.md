@@ -15,4 +15,8 @@ rhetoric 言辞力度
 alliance联盟
 hostility 对抗，冲突
 soar 飙升
-acclaimed
+acclaimed受到赞誉的
+pop up突然出现
+disorder混乱，疾病
+mobility行动能力
+vocal cords 声带

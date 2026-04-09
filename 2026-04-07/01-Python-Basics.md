@@ -168,7 +168,7 @@ def min_coins(amount, coins):
     
     # For each amount from 1 to target amount
     for i in range(1, amount + 1):
-        # Try each coin denomination
+        # Try each coin denomination（面值）
         for coin in coins:
             if coin <= i:  # Can only use coin if it doesn't exceed current amount
                 # Update minimum: current minimum vs (coins for remaining amount + 1)

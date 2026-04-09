@@ -134,6 +134,9 @@ def climb_stairs_memo(n, memo={}):
     return memo[n]
 ```
 从n到1的唯一值都只计算一次
+时间为O(n)，空间同样
+
+制表：自下而上
 
 
 

@@ -183,6 +183,10 @@ def min_coins(amount, coins):
 # Result: 2 coins (3 + 3)
 ```
 数组是每个金额的最优解
+float('ind')是正无穷大
+如果结果是无穷大说明凑不出
+
+
 
 
 

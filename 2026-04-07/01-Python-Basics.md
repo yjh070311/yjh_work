@@ -158,7 +158,7 @@ def climb_stairs_tabulation(n):
 消除递归，迭代构建解，逐个计算每个解存储到列表里
 没有递归调用堆栈，无溢出风险，空间O（1），时间O（n），简单加法，时间线性增长
 
-硬币换钱体现：最优子结构和重叠子问题
+硬币换钱体现dp（dynamic program）的两个原则：最优子结构和重叠子问题
 ```python
 def min_coins(amount, coins):
     """Find minimum number of coins needed to make the given amount"""

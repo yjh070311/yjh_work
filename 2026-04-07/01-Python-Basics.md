@@ -118,6 +118,24 @@ left,right有序
 重叠子问题，最优子结构（最优解包含子问题的最优解）
 爬楼梯用递归复杂度呈指数级增长
 备忘录：自上而下，存储昂贵函数调用结果，在相同输入返回缓存结果
+```python
+def climb_stairs_memo(n, memo={}):
+    """Dynamic programming with memoization"""
+    # Check if we've already calculated this value
+    if n in memo:
+        return memo[n]  # Return cached result - O(1) lookup!
+    
+    # Base cases
+    if n <= 2:
+        return n
+    
+    # Calculate once and store in memo for future use
+    memo[n] = climb_stairs_memo(n-1, memo) + climb_stairs_memo(n-2, memo)
+    return memo[n]
+```
+从n到1的唯一值都只计算一次
+
+
 
 
 

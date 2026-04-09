@@ -182,7 +182,7 @@ def min_coins(amount, coins):
 # dp[6] = min(dp[5]+1, dp[3]+1, dp[2]+1) = min(3+1, 1+1, 2+1) = 2
 # Result: 2 coins (3 + 3)
 ```
-
+数组是每个金额的最优解
 
 
 

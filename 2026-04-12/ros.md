@@ -223,4 +223,4 @@ int main(int argc, char **argv)
 ros2 run 文件名 可执行文件名
 ros node list 节点表
 ros node info /节点名 查看节点详情（通信
-
+改节点名：ros2 run 文件名 可执行文件名 --ros--args -r \_\_node:=改的名

@@ -180,4 +180,9 @@ install(TARGETS
 分别是
 add_executable（生成可执行文件名   cpp文件名）
 ament_target_dependencies（可执行文件名  链接依赖名）
-install（
+install（TARGETS 可执行文件名 DESTINATION lib/${PROJECT_NAME}）安装到工作空间，可以run找到
+
+
+
+节点模板
+node

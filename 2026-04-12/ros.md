@@ -36,3 +36,13 @@ source ~/ros2_ws/install/setup.bash
 
 colcon build 
 colcon是ros构建系统，哪怕现在没有任何包，也可以 build 一下，让工作空间生成必要结构
+
+包是应用的子模块
+创建包声明依赖
+生成结构大致是
+- `my_py_pkg/`（里面还有一层同名目录，用来放 python 代码）写代码的地方
+    
+- `package.xml`（所有包都必须有）
+    
+- `setup.py`（Python 节点的“安装/入口”在这里配置）
+- 

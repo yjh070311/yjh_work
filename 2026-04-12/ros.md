@@ -123,3 +123,7 @@ class MyCustomNode(Node):
         self.counter_ += 1
 ```
 create_timer(时间，callback)定时器
+回调函数：系统反过来调用你的代码
+
+写c++
+## 1）创建 C++ 文件

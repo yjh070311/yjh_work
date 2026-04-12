@@ -10,4 +10,18 @@ Action 可以先理解成：
 **“更适合耗时任务的 Service”**。
 有执行过程中的反馈，可以取消，适合交互性
 action接口内容分为goal,result,feedback
-发送一个goal希望做的事：ros2 action send_goal <action_name> <action_interface> "<goal_in_json>"
+发送一个goal希望做的事：ros2 action send_goal 
+<action_name> <action_interface> "<goal_in_json>"
+
+topic service action 都是通信
+parameter是在启动节点给他不同配置
+参数属于节点
+
+launch file 启动文件：一次启动多个节点以及他们的参数
+
+建立工作空间
+建包
+写节点
+构建配置
+build编译，将源代码转换成可执行程序                            
+source执行脚本

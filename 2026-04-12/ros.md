@@ -95,6 +95,7 @@ shutdown关闭通信
 但最好安装在工作空间里
 这样才能：用run启动，可以被launch file 管理
 怎样安装在工作空间可被run：同时要在setup.py配置可执行入口
+
 找到 `entry_points`，在 `console_scripts` 里加入：
 
 ```
@@ -105,4 +106,19 @@ entry_points={
 },
 ```
 找到entry_points,即进入配置加入，语法是
+
 可执行名（终端可以直接输入的命令）=包名.文件名.函数名
+
+
+## 5）加一个定时器：每秒打印一次（callback 的第一次登场）
+
+```python
+class MyCustomNode(Node):
+    def __init__(self):
+        super().__init__('my_node_name')
+        self.counter_ = 0
+        self.timer_ = self.create_timer(1.0, self.print_hello)
+    def print_hello(self):
+        self.get_logger().info("Hello " + str(self.counter_))
+        self.counter_ += 1
+```

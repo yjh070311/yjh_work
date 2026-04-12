@@ -186,3 +186,41 @@ install（TARGETS 可执行文件名 DESTINATION lib/${PROJECT_NAME}）安装到
 
 节点模板
 node+main/init/spin/shutdown
+## Python 节点模板
+```python
+#!/usr/bin/env python3
+import rclpy
+from rclpy.node import Node
+class MyCustomNode(Node):
+    def __init__(self):
+        super().__init__("node_name")
+def main(args=None):
+    rclpy.init(args=args)
+    node = MyCustomNode()
+    rclpy.spin(node)
+    rclpy.shutdown()
+if __name__ == "__main__":
+    main()
+```
+## C++ 节点模板
+```c++
+#include
+ "rclcpp/rclcpp.hpp"
+class MyCustomNode : public rclcpp::Node
+{
+public:
+  MyCustomNode() : Node("node_name") {}
+};
+int main(int argc, char **argv)
+{
+  rclcpp::init(argc, argv);
+  auto node = std::make_shared<MyCustomNode>();
+  rclcpp::spin(node);
+  rclcpp::shutdown();
+  return 0;
+}
+```
+ros2 run 文件名 可执行文件名
+ros node list 节点表
+ros node info /节点名 查看节点详情（通信
+

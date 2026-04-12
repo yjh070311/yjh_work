@@ -164,3 +164,5 @@ int main(int argc, char **argv)
   return 0;
 }
 ```
+## 3）在 CMakeLists.txt 里声明可执行文件并安装
+

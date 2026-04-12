@@ -93,4 +93,4 @@ shutdown关闭通信
 ## 3）为什么 Python 也要 build？
 可以执行脚本
 但最好安装在工作空间里
-这样
+这样才能：用run启动，可以被launch file 管理

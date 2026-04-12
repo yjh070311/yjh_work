@@ -127,7 +127,7 @@ create_timer(时间，callback)定时器
 
 写c++
 ## 1）创建 C++ 文件
-src里面创建
+src里面创建,流程相同，语法不同，改成配置cmake
 ## 2）最小节点 + timer + log
 ```c++
 #include

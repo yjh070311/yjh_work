@@ -94,3 +94,9 @@ shutdown关闭通信
 可以执行脚本
 但最好安装在工作空间里
 这样才能：用run启动，可以被launch file 管理
+怎样安装在工作空间可被run：同时要在setup.py配置可执行入口
+找到 `entry_points`，在 `console_scripts` 里加入：
+
+```
+
+```

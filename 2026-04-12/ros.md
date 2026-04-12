@@ -86,4 +86,10 @@ def main(args=None):
 if __name__ == '__main__':
     main()
 ```
-
+初始化节点
+创建节点对象node
+spin处理回调
+shutdown关闭通信
+## 3）为什么 Python 也要 build？
+可以执行脚本
+但最好

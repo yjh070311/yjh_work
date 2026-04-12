@@ -98,5 +98,11 @@ shutdown关闭通信
 找到 `entry_points`，在 `console_scripts` 里加入：
 
 ```
-
+entry_points={
+    'console_scripts': [
+        'test_node = my_py_pkg.my_first_node:main',
+    ],
+},
 ```
+找到entry_points,即进入配置加入，语法是
+可执行名=包名.文件名.

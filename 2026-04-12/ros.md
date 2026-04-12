@@ -166,3 +166,16 @@ int main(int argc, char **argv)
 ```
 ## 3）在 CMakeLists.txt 里声明可执行文件并安装
 
+找到find_package
+```
+  
+add_executable(test_node src/my_first_node.cpp)
+ament_target_dependencies(test_node rclcpp)
+install(TARGETS
+  test_node
+  DESTINATION lib/${PROJECT_NAME}/
+)
+
+```
+分别是
+add_executable（生成可执行文件名

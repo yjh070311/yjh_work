@@ -185,4 +185,4 @@ install（TARGETS 可执行文件名 DESTINATION lib/${PROJECT_NAME}）安装到
 
 
 节点模板
-node
+node+main/init/spin/shutdown

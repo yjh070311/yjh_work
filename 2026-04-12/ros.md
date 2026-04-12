@@ -44,7 +44,7 @@ py生成结构大致是
     
 - `package.xml`（所有包都必须有）
     
-- `setup.py`（Python 节点的“安装/入口”在这里配置）
+- `setup.py`（Python 节点的“安装/入口”在这里配置，安装说明书）
 -C++ 包会包含：
 
 - `CMakeLists.txt`（编译/链接/安装规则）

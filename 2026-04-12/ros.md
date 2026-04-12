@@ -8,3 +8,6 @@ ros2 service call  /服务名称（具体作用，类似网址，用于节点间
 
 Action 可以先理解成：  
 **“更适合耗时任务的 Service”**。
+有执行过程中的反馈，可以取消，适合交互性
+action接口内容分为goal,result,feedback
+发送一个goal希望做的事：ros2 action send_goal <action_name> <action_interface> "<goal_in_json>"

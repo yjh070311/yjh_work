@@ -57,3 +57,33 @@ py生成结构大致是
 
 colcon build --packages--select 包名
 只构建一个包
+## 1）创建文件并赋予可执行权限
+
+进入 Python 包的代码目录：
+
+```
+cd ~/ros2_ws/src/my_py_pkg/my_py_pkg/
+touch my_first_node.py
+chmod +x my_first_node.py
+```
+## 2）最小节点模板：能启动、能 spin
+
+把下面代码写进 `my_first_node.py`：
+```
+
+#!/usr/bin/env python3
+import rclpy
+from rclpy.node import Node
+class MyCustomNode(Node):
+    def __init__(self):
+        super().__init__('my_node_name')
+        self.get_logger().info("Hello World")
+def main(args=None):
+    rclpy.init(args=args)
+    node = MyCustomNode()
+    rclpy.spin(node)
+    rclpy.shutdown()
+if __name__ == '__main__':
+    main()
+```
+

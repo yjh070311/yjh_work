@@ -25,4 +25,14 @@ launch file 启动文件：一次启动多个节点以及他们的参数
 构建配置
 build编译，将源代码转换成可执行程序   
 从.py.cpp到.exe.bin，代码修改后
-source执行脚本，每次新终端用来加载环境变量，有环境变量执行结束后才有输出，不需要+x权限
+source执行脚本，每次新终端用来加载环境变量，让终端认识节点，有环境变量执行结束后才有输出，不需要+x权限，
+setup.bash一般在install里，手动source一次
+为了每次开终端都自动生效，把它写进 `~/.bashrc`，而且**顺序非常重要**：先 source 全局 ROS，再 source 工作空间。
+
+```
+source /opt/ros/jazzy/setup.bash
+source ~/ros2_ws/install/setup.bash
+```
+
+colcon build 
+colcon是ros构建系统，哪怕现在没有任何包，也可以 build 一下，让工作空间生成必要结构

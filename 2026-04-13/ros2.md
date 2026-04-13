@@ -45,4 +45,5 @@ class NumberPublisherNode(Node):
     "number_publisher = my_py_pkg.number_publisher:main",
 ],
 ```
-colcon build --packages-select
+colcon build --packages-select my_py_pkg
+source ~/.bashrc

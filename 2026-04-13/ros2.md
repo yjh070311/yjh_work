@@ -96,3 +96,5 @@ if __name__ == "__main__":
 ```
 self.get_logger().info打印日志
 订阅创建函数
+比较create_publisher(数据类型, topic名, 队列queue_size)
+create_subscription(数据类型，topic名，回调函数，队列)

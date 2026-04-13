@@ -47,3 +47,4 @@ class NumberPublisherNode(Node):
 ```
 colcon build --packages-select my_py_pkg
 source ~/.bashrc
+ros2 topic echo /number订阅消息

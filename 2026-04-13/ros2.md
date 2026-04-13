@@ -98,3 +98,6 @@ self.get_logger().info打印日志
 订阅创建函数
 比较create_publisher(数据类型, topic名, 队列queue_size)
 create_subscription(数据类型，topic名，回调函数，队列)
+订阅者必须在创建时指定回调函数
+发布者可以在任何地方调用
+回调里拿到数据，在回调函数里做逻辑

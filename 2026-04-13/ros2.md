@@ -1,0 +1,6 @@
+publisher是信号发射器
+topic是电台频道
+发射器往频道发射数据
+subscriber是手机能接收，调到同一个频道，还要用同一信号格式
+也就是topic的名字加接口
+topic以字母开头

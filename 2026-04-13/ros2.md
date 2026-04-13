@@ -23,11 +23,13 @@ class NumberPublisherNode(Node):
         self.number_timer_ = self.create_timer(1.0, self.publish_number)
         self.get_logger().info("Number publisher has been started.")
     def publish_number(self):
-        msg = Int64() 
-        msg.data = self.number_
-        self.number_publisher_.publish(msg)
+        msg = Int64() #回调函数内部处理，单独创建消息变量
+        msg.data = self.number_ #成员变量可以在函数外使用
+        self.number_publisher_.publish(msg) #发布消息哦
 ```
 - `create_publisher(数据类型, topic名, 队列queue_size)`
 - 变量名后带下划线是表明是成员变量，外面可以引用
 - `create_timer(周期秒, 回调函数)`
-- 
+- - 发布时：创建消息对象 → 填字段 → `publish(msg)`对应回调函数的三行
+
+补充依赖

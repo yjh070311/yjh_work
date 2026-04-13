@@ -12,3 +12,19 @@ topic以字母开头
 只有一个数字
 ## 2）在构造函数里创建 publisher，并用 timer 定时发布
 消息导入Int64
+from example_interfaces.msg import Int64
+创建publlisher注册timer
+```python
+class NumberPublisherNode(Node):
+    def __init__(self):
+        super().__init__("number_publisher")
+        self.number_ = 2
+        self.number_publisher_ = self.create_publisher(Int64, "number", 10)
+        self.number_timer_ = self.create_timer(1.0, self.publish_number)
+        self.get_logger().info("Number publisher has been started.")
+    def publish_number(self):
+        msg = Int64()
+        msg.data = self.number_
+        self.number_publisher_.publish(msg)
+```
+- `create_publisher(数据类型, topic名, 队列queue_size)`

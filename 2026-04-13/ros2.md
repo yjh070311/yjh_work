@@ -93,4 +93,6 @@ def main(args=None):
     rclpy.shutdown()
 if __name__ == "__main__":
     main()
-    ```
+```
+self.get_logger().info打印日志
+订阅创建函数

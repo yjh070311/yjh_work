@@ -101,3 +101,91 @@ create_subscription(数据类型，topic名，回调函数，队列)
 订阅者必须在创建时指定回调函数
 发布者可以在任何地方调用
 回调里拿到数据，在回调函数里做逻辑
+setup.py添加路口后在两个终端分别运行两个节点的可执行文件
+
+
+四、Topic 调试工具：rqt_graph + ros2 topic 写完代码只是开始，真正省时间的是调试工具。
+## 1）用 rqt_graph 看连接关系
+同时跑 `number_publisher` 和 `number_counter`，再开：
+
+```
+rqt_graph
+```
+
+刷新并选 `Nodes/Topics (all)`，你会看到：
+
+- 一个节点发布到 `/number`
+    
+- 一个节点订阅 `/number`
+    
+
+如果你把 topic 名写错了（比如 publisher 写 `numberr`），rqt_graph 会直接显示两条线断开：一个在 `/numberr`，一个在 `/number`，瞬间定位问题。
+
+## 2）ros2 topic：列、查、看、发
+常用命令
+```
+ros2 topic list#列
+ros2 topic info /number #查消息
+ros2 interface show example_interfaces/masg/Int64#查看接口
+ros2 topic echo /number #订阅并打印话题消息
+```
+也可以手动发送topic，只需运行sub
+发ros2 topic pub -r 2.0（表示2Hz） /number example_interfaces/msg/Int64"{data:7}"
+
+运行是改topic名
+ros2 run my_py_pkg number_publisher --ros-args -r number:=my_number
+两边都要remap
+启动两个发布者叠加，消息更加快
+## 4）用 bag 录 topic、放 topic（复现现场）
+录制：
+mkdir -p ~/bags
+cd ~/bags
+ros2 bag record /number -o bag1
+会生成bag1目录（里面是录制数据
+回放：
+ros2 bag play ~/bags/bag1/
+启动接收者会收到数据
+
+# 五、自定义 Topic 消息：什么时候需要？怎么做？
+
+Topic 需要接口（消息类型）。两条原则：
+
+1. **先找现成的**：能用就别造轮子
+    
+2. **找不到完全合适的**：就做自定义消息（语义更清晰，也更标准）
+
+常见消息集合在common_interfaces
+安装接口包 sudo apt install ..
+查看消息 ros2 interface show..
+
+## 创建自定义接口包：`my_robot_interfaces`
+
+最佳实践：**单独建一个“只放接口”的包**，不要在里面写节点。
+在主包的src下创建接口包ros2 pkg create my_robot_interfaces
+删除c的src和include建立msg
+修改package.xml在依赖ament_cmake后加
+<build_depend>rosidl_default_generators</build_depend>
+<exec_depend>rosidl_default_runtime</exec_depend>
+<member_of_group>rosidl_interface_packages</member_of_group>
+修改Cmake在find后，ament前加入
+find_package(rosidl_default_generators REQUIRED)
+rosidl_generate_interfaces(${PROJECT_NAME}
+  # 在这里添加 msg 文件
+)
+ament_export_dependencies(rosidl_default_runtime)
+
+## 4）写一个自定义消息：HardwareStatus.msg
+
+在消息包里touch文件HardwareStatus.msg
+写入字段int64 version
+float64 temperature
+bool are_motors_ready
+string debug_message
+在rosidl_generate_interfaces加msg/HardwareStatus.msg
+同样build
+
+## 5）在代码里使用自定义消息
+以py为例
+1）加依赖（依赖是包）
+<\depend>my_robot_interfaces<\/depend>
+2）代码里import

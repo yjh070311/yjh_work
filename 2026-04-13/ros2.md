@@ -23,8 +23,11 @@ class NumberPublisherNode(Node):
         self.number_timer_ = self.create_timer(1.0, self.publish_number)
         self.get_logger().info("Number publisher has been started.")
     def publish_number(self):
-        msg = Int64()
+        msg = Int64() 
         msg.data = self.number_
         self.number_publisher_.publish(msg)
 ```
 - `create_publisher(数据类型, topic名, 队列queue_size)`
+- 变量名后带下划线是表明是成员变量，外面可以引用
+- `create_timer(周期秒, 回调函数)`
+- 

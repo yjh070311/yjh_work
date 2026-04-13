@@ -48,3 +48,21 @@ class NumberPublisherNode(Node):
 colcon build --packages-select my_py_pkg
 source ~/.bashrc
 ros2 topic echo /number订阅消息
+5）C++：流程同样，差别在语法
+C++ 的思路完全一致：
+
+include 对应消息头：example_interfaces/msg/int64.hpp
+
+create_publisher<类型>("number", 10)
+
+timer 回调里创建 msg，填字段，publish
+
+构建时除了 rclcpp 之外，需要：
+
+package.xml 增加 <depend>example_interfaces</depend>
+
+CMakeLists.txt 增加 find_package(example_interfaces REQUIRED)
+
+ament_target_dependencies(... rclcpp example_interfaces)
+
+

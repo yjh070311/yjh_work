@@ -33,3 +33,8 @@ class NumberPublisherNode(Node):
 - - 发布时：创建消息对象 → 填字段 → `publish(msg)`对应回调函数的三行
 
 补充依赖
+用了新的接口包 `example_interfaces`，要在 `my_py_pkg/package.xml` 里加依赖：
+```
+<depend>rclpy</depend>
+<depend>example_interfaces</depend>
+```

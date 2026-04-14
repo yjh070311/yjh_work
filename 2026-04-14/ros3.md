@@ -107,7 +107,7 @@ ament_target_dependencies(number_counter ... my_robot_interfaces)
 self.client_=self.create_client(ResetCounter,"reset_counter")
 写方法发送请求：
 ```python
-def call_reset_sounter(self,value):
+def call_reset_counter(self,value):
 	#等待请求
 	while not self.client_.wait_for_service(1.0):
 		self.get_logger().warn("waiting for service")
@@ -130,3 +130,24 @@ def callback_reset_counter_response(self, future):
 ```
 为什么要用 callback？  
 因为如果你在同一个线程里“阻塞等待响应”，节点就无法 spin，响应也处理不了，容易死锁。异步 + 回调是最安全的结构。
+在 main 里创建节点后、spin 前调用一次：
+
+```
+node = ResetCounterClientNode()
+node.call_reset_counter(20)
+rclpy.spin(node)
+```
+## 3）C++ 客户端：async_send_request + future callback
+
+逻辑同 Python：
+
+- `create_client<ResetCounter>("reset_counter")`
+    
+- `wait_for_service(1s)`
+    
+- `async_send_request(request, callback)`
+    
+- callback 里 `future.get()` 拿 response
+    
+
+并同样要在 spin 前调用一次 `callResetCounter(20)`。

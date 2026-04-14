@@ -101,3 +101,5 @@ ament_target_dependencies(number_counter ... my_robot_interfaces)
 不然会出现 include 找不到的编译错误
 
 # 四、写 Service Client：reset_counter_client
+只负责调用服务的client，验证服务是否工作
+

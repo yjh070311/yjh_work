@@ -58,5 +58,9 @@ def callback_reset_counter(self,request:ResetCounter.Request,response:ResetCount
 	if request.value<0:
 		response.success=False
 		response.message="不能复位到负数"
-	elif request.resert_value>self.counter
+	elif request.resert_value>self.counter_:
+	
+	else:
+		self.ounter_=request.reset_value
+		self.get_logger
 ```

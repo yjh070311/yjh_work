@@ -71,3 +71,33 @@ def callback_reset_counter(self,request:ResetCounter.Request,response:ResetCount
 	
 ```
 
+## 2）C++ 服务端：create_service + request/response shared_ptr
+
+C++ 版本做同样的事：
+
+- `package.xml` 增加 `<depend>my_robot_interfaces</depend>`
+    
+- include：`#include "my_robot_interfaces/srv/reset_counter.hpp"`
+    
+- 成员：`rclcpp::Service<ResetCounter>::SharedPtr reset_counter_service_;`
+    
+- 构造函数里 `create_service<ResetCounter>(..., bind(... _1, _2))`
+    
+- callback 里用 `request->reset_value`、`response->success = ...`
+    
+
+C++ callback 一般返回 `void`，不需要 return response（因为你直接填 response 指针）。
+
+并且记得 `CMakeLists.txt` 里：
+
+```
+find_package(my_robot_interfaces REQUIRED)
+```
+
+```
+ament_target_dependencies(number_counter ... my_robot_interfaces)
+```
+
+不然会出现 include 找不到的编译错误
+
+# 四、写 Service Client：reset_counter_client

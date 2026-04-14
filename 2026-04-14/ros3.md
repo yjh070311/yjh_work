@@ -105,4 +105,8 @@ ament_target_dependencies(number_counter ... my_robot_interfaces)
 创建服务之类的变量名没有要求
 创建client
 self.client_=self.create_client(ResetCounter,"reset_counter")
-
+写方法发送请求：
+```python
+def call_reset_sounter(self,value):
+	
+```

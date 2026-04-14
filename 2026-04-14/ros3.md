@@ -108,5 +108,25 @@ self.client_=self.create_client(ResetCounter,"reset_counter")
 写方法发送请求：
 ```python
 def call_reset_sounter(self,value):
-	
+	#等待请求
+	while not self.client_.wait_for_service(1.0):
+		self.get_logger().warn("waiting for service")
+	#创建请求
+	request=ResetCounter.Request()
+	request.reset_value=value
+	#异步回调（立即返回，不阻塞）
+	future=self.client_.call_async(request)
+	#注册回调，响应到达自动调用
+	future.add_done_callback(self.callback_reset_counter_response)
+	#函数立即返回，节点继续spin()
 ```
+
+response回调
+```python
+def callback_reset_counter_response(self, future):
+    response = future.result()
+    self.get_logger().info("Success flag: " + str(response.success))
+    self.get_logger().info("Message: " + str(response.message))
+```
+为什么要用 callback？  
+因为如果你在同一个线程里“阻塞等待响应”，节点就无法 spin，响应也处理不了，容易死锁。异步 + 回调是最安全的结构。

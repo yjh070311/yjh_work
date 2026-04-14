@@ -1,3 +1,5 @@
+`self.` 用于访问**实例变量**和**实例方法**，而**局部变量**不需要
+
 client发亲请求
 server处理请求并回响应
 接口两部分：request和response
@@ -62,5 +64,10 @@ def callback_reset_counter(self,request:ResetCounter.Request,response:ResetCount
 	
 	else:
 		self.ounter_=request.reset_value
-		self.get_logger
+		self.get_logger().info("Reset counter to"+str(self.counter_))
+		response.success=True
+		response.message="success"
+	return response
+	
 ```
+

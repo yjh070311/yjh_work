@@ -155,3 +155,43 @@ rclpy.spin(node)
 # 五、终端工具：ros2 service（服务调试必备）
 
 一个非常实际的点：**rqt_graph 目前不支持 service 可视化**，所以 service 调试主要靠 `ros2 service`。
+## 1）列出服务
+
+先启动 `number_counter`（让服务端存在），再：
+
+```
+ros2 service list
+```
+
+你会看到一堆参数相关服务（每个节点都会带），以及你的：
+
+- `/reset_counter`
+## 2）查看服务类型与接口
+
+```
+ros2 service type /reset_counter
+ros2 interface show my_robot_interfaces/srv/ResetCounter
+```
+
+这在“给已有服务写 client”时特别有用：  
+你甚至不用读对方代码，终端就能把名字+类型给你扒出来。
+## 3）不用写 client，也能直接从终端调用服务
+
+接口简单时，直接：
+```
+ros2 service call /reset_counter(服务名) my_robot_interfaces/srv/ResetCounter（接口）"{数据}"
+```
+## 4）运行时改 service 名（remap）
+
+跟 topic 一样，service 也能 remap：
+
+```
+ros2 run my_py_pkg number_counter --ros-args -r reset_counter:=reset_counter1
+```
+
+此时服务名变成 `/reset_counter1`。  
+client 也要相同 remap 才能找到：
+
+```
+ros2 run my_py_pkg reset_counter_client --ros-args -r reset_counter:=reset_counter1
+```

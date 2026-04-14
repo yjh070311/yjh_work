@@ -151,3 +151,7 @@ rclpy.spin(node)
     
 
 并同样要在 spin 前调用一次 `callResetCounter(20)`。
+
+# 五、终端工具：ros2 service（服务调试必备）
+
+一个非常实际的点：**rqt_graph 目前不支持 service 可视化**，所以 service 调试主要靠 `ros2 service`。

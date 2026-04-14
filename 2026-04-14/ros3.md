@@ -19,3 +19,25 @@ int64 reset_value
 bool success
 string message
 
+在 `my_robot_interfaces/CMakeLists.txt` 的 `rosidl_generate_interfaces(...)` 里加一行（不要逗号）：
+```python
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/HardwareStatus.msg"
+  "srv/ResetCounter.srv"
+)
+```
+interface show验证接口存在
+# 三、写 Service Server：
+## 1）Python 服务端：导入接口 + create_service + callback
+
+先在 `my_py_pkg/package.xml` 里加依赖：
+<\depend>my_robot_interfaces</depend>
+再节点文件导入
+from my_robot_interfaces.srv import ResetCounter
+创建server
+```
+self.reset_counter_service_=self.create_service(
+	ResetCounter,
+	"reset_counter",'self.callback_reset_counter
+		)  #（接口，“服务名称”，回调函数）
+```

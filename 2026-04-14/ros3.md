@@ -41,3 +41,22 @@ self.reset_counter_service_=self.create_service(
 	"reset_counter",'self.callback_reset_counter
 		)  #（接口，“服务名称”，回调函数）
 ```
+### 最小版 callback（能跑通）
+```python
+def callback_reset_counter(self, request: ResetCounter.Request,
+                           response: ResetCounter.Response):
+    self.counter_ = request.reset_value
+    self.get_logger().info("Reset counter to " + str(self.counter_))
+    response.success = True
+    response.message = "Success"
+    return response
+```
+加校验（reset必须大于等于0，且不能大于当前counter）
+callback调取参数（self,request:接口.Request,response:接口.Response
+```python
+def callback_reset_counter(self,request:ResetCounter.Request,response:ResetCounter.Response):
+	if request.value<0:
+		response.success=False
+		response.message="不能复位到负数"
+	elif request.resert_value>self.counter
+```

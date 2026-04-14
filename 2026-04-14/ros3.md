@@ -102,4 +102,7 @@ ament_target_dependencies(number_counter ... my_robot_interfaces)
 
 # 四、写 Service Client：reset_counter_client
 只负责调用服务的client，验证服务是否工作
+创建服务之类的变量名没有要求
+创建client
+self.client_=self.create_client(ResetCounter,"reset_counter")
 

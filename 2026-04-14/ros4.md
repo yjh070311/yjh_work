@@ -30,6 +30,30 @@ goal status：（目标状态）action也是通信，底层是封装好的topics
 
 在接口新增action/目录
 创建.action文件
+接口顺序必须是goal，result，feedback
+
+```python
+int64 target_number
+float64 delay
+-------
+int64 reached_number
+-------
+int64 current_number
+```
+在cmake里的rosidl_generate_interfaces()加
+"action/CountUntil.action"
+build source ,interface show
+
+
+
+
+
+
+
+
+
+
+
 
 
 

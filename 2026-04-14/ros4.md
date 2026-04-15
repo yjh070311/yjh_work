@@ -20,7 +20,37 @@ service处理机器人移动难处理的需求：
 feedback：执行过程不断反馈进度
 cancel：client提出取消，server决定是否停止，并尽力安全停止
 goal status：（目标状态）action也是通信，底层是封装好的topics+services，内部状态流转
-同名action只能有一个
+同名action只能有一个server：有多个提出请求，一个处理请求
+
+
+接口组成：goal：目标计数target_number+每次间隔delay
+，feedback:当前计数current_number
+，result:最终到达数字reached_number（如果取消就返回最后的数字）
+
+
+在接口新增action/目录
+创建.action文件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -80,8 +80,11 @@ back_callback,有反馈就处理：
 feedback_msg.feedback.current_number
 
 2)cancel:(spin被阻塞)
+client发cancel请求
+server的cancel_callback决定接受
+server在execute循环检测是否请求取消，是就提前停止，返回result
 
-
+spin是单线程，execute_callback长时间占用，cancel_callback没机会执行
 
 
 

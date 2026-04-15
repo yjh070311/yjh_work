@@ -33,4 +33,13 @@ simulation_mode(bool)
 
 在节点使用参数，两步核心：
 1.declare：让参数存在于节点，给默认值
-2.get：把参数值读出来，存到变量里
+2.get：把参数值读出来，存到变量里参与逻辑
+
+## 4. Python：声明 + 获取 + 用起来
+
+在构造函数声明：
+```python
+self.declare_parameter("number",2)
+self.declare_
+```
+

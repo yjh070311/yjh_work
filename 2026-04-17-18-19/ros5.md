@@ -24,3 +24,12 @@
 device_name(string)
 fps(int)
 simulation_mode(bool)
+
+用同一份代码启动多个节点实例，运行不同配置：
+- 相机 A：`/dev/ttyUSB0`，30 FPS，非仿真
+    
+- 相机 B：`/dev/ttyUSB1`，60 FPS，非仿真
+
+
+在节点使用参数，两步核心：
+

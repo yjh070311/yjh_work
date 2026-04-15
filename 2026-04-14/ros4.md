@@ -122,7 +122,16 @@ Action 也有自己的 CLI：`ros2 action`。
 /count_until
 
 2)信息和接口
-ros2 
+ros2 action info /count_until -t
+ros2 interface show my_robot_interfaces/action/CountUntil
+
+3)直接发goal：
+```
+ros2 action send_goal /count_until my_robot_interfaces/action/CountUntil "{target_number: 3, delay: 0.4}" --feedback
+```
+
+适合快速测试 server。目标结构复杂时（数组、嵌套消息很多），写 client 往往更省事。
+
 
 
 

@@ -134,7 +134,16 @@ ros2 action send_goal /count_until my_robot_interfaces/action/CountUntil "{targ
 
 
 
+- Server：goal_callback → execute_callback → result
+    
+- Client：send_goal_async → goal_response_callback → get_result_async → goal_result_callback异步回调
+    
 
+进阶能力：
+
+- feedback_callback：实时进度
+    
+- cancel：多线程执行器 + 回调组，否则 cancel 很可能收不到
 
 
 

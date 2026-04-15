@@ -53,7 +53,7 @@ build source ,interface show
 Action server 不像 topic/service 那样 `self.create_xxx()`，Python 要用 `ActionServer` 类：
 
 goal_callback:收到goal决定是否接受，校验目标数是否大于0，接受
-execute_callback
+execute_callback:接受后执行，最终succeed（）返回result，里面循环计数+sleep（delay）
 
 
 

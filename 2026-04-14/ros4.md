@@ -54,6 +54,38 @@ Action server 不像 topic/service 那样 `self.create_xxx()`，Python 要用 
 
 goal_callback:收到goal决定是否接受，校验目标数是否大于0，接受
 execute_callback:接受后执行，最终succeed（）返回result，里面循环计数+sleep（delay）
+最后返回reached_numberg
+成功goal_handle.succeed()
+异常.abort()
+取消.canceled()
+
+# 六、写 Action Client：发 goal、等接受、等结果
+1.goal_response（是否回应）_callback:知道goal是否被接受
+2.goal_result（给出结果）_callback:拿到最终result+状态
+
+不阻塞，
+发送goal要用异步send_goal_async()
+
+# 七、Action 的高级能力：Feedback + Cancel
+
+1）加feedback：
+server:
+创建feedback=CountUntil.Feedback()
+每次更新feedback.current_number=counter
+goal_handle.publish_feedback(feedback)
+client:
+发送goal时注册feed
+
+back_callback,有反馈就处理：
+feedback_msg.feedback.current_number
+
+2)cancel:(spin被阻塞)
+
+
+
+
+
+
 
 
 

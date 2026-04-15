@@ -98,10 +98,31 @@ spin是单线程，execute_callback长时间占用，cancel_callback没机会执
 python cancel：
 server创建加cancel_callback=
 execute检查goal_handle.is_cancel_requested
-main用rclpy.spi
+main用rclpy.spin
+server使用 `ReentrantCallbackGroup()` 允许并发回调
 
 
 
+
+### C++ Cancel 要点（概念同，写法更严格）
+
+- create_server 必须提供 cancel callback
+    
+- execute 里 `goal_handle->is_canceling()` 判断
+    
+- main 用 `MultiThreadedExecutor`
+    
+- callback group 设为 Reentrant
+
+# 八、命令行工具：ros2 action
+
+Action 也有自己的 CLI：`ros2 action`。
+
+1)列出ros2 action list:
+/count_until
+
+2)信息和接口
+ros2 
 
 
 

@@ -46,8 +46,14 @@ build source ,interface show
 
 
 
+# 五、写 Action Server：接收 goal、执行、返回 result
 
+## Python Server 的核心结构
 
+Action server 不像 topic/service 那样 `self.create_xxx()`，Python 要用 `ActionServer` 类：
+
+goal_callback:收到goal决定是否接受，校验目标数是否大于0，接受
+execute_callback
 
 
 

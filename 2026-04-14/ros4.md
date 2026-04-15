@@ -86,6 +86,27 @@ server在execute循环检测是否请求取消，是就提前停止，返回resu
 
 spin是单线程，execute_callback长时间占用，cancel_callback没机会执行
 
+解决方式有两类：
+
+- 传统并发：执行放到新线程
+    
+- ROS 2 方式：**MultiThreadedExecutor + ReentrantCallbackGroup**
+    
+
+这篇笔记沿用 ROS 2 的方式
+
+python cancel：
+server创建加cancel_callback=
+execute检查goal_handle.is_cancel_requested
+main用rclpy.spi
+
+
+
+
+
+
+
+
 
 
 

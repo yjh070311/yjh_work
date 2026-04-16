@@ -44,4 +44,9 @@ self.declare_parameter("number",2)
 self.declare_parameter("publish_period",1.0)
 ```
 提供默认值，保证类型安全（一致），运行时可以再次读取（可能被外部修改）
+句式:self.declare_parameter("参数名“,默认值)
 
+再读取参数值
+```
+self.number_timer_=self.create_timer(self.time_period_,self.publish_number)
+```

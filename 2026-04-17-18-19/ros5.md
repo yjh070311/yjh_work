@@ -38,8 +38,10 @@ simulation_mode(bool)
 ## 4. Python：声明 + 获取 + 用起来
 
 在构造函数声明：
+
 ```python
 self.declare_parameter("number",2)
-self.declare_
+self.declare_parameter("publish_period",1.0)
 ```
+提供默认值，保证类型安全（一致），运行时可以再次读取（可能被外部修改）
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "plan.md",
+                "file": "2026-4-20/plan.md",
                 "mode": "source",
                 "source": false
               },
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "4c47644fc652b0c0",
@@ -198,11 +197,13 @@
   },
   "active": "d0781be1d1144801",
   "lastOpenFiles": [
+    "待学，做.md",
+    "2026-4-20/plan.md",
+    "2026-4-21/plan.md",
+    "2026-4-21",
     "2026-04-17-18-19/weekend plan.md",
-    "plan.md",
     "2026-4-20",
     "2026-04-17-18-19/ros5.md",
-    "待学，做.md",
     "2026-04-16/plan.md",
     "2026-04-17-18-19",
     "2026-04-14/ros4.md",
@@ -228,11 +229,8 @@
     "untitled.md",
     "2026-04-09/plan.md",
     "2026-04-08/plan.md",
-    "2026-04-07/01-Python-Basics.md",
     "2026-04-09/english",
-    "2026-04-07/03-Machine-Learning-Basics.md",
     "2026-04-09",
-    "2026-04-08",
-    "2026-04-07"
+    "2026-04-08"
   ]
 }

@@ -33,14 +33,19 @@ XML里写
 ## XML 里 include 另一个 launch
 
 
+
 XML 里 include 语法很直观：
+
+```
+
 <launch>
 	<include file="$(find_pkg_share my_robot_bringup)/launch/number_app.launch.py"/>
 <launch>
 
+```
 
 
-## 7. Launch File 里能配置什么？（核心三件套）
+##  7. Launch File 里能配置什么？（核心三件套）
 
 你在命令行 `ros2 run` 里能做的事情，launch 基本都能做。最常用的是三类：
 
@@ -81,6 +86,7 @@ namespace作用到topic名写number无前导/，会自动随namespace变成/abc/
 
 
 # TF
+
 
 
 

@@ -76,6 +76,8 @@ XML加载YAML的写法：
 namespace(命名空间)：把两套同样系统隔离开
 同时启动两台同类型/启动两份同构节点
 
+namespace作用到topic名写number无前导/，会自动随namespace变成/abc/number
+/number是全局名字，不会受namespace影响
 
 
 

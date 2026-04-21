@@ -17,3 +17,8 @@ config/:YAML参数文件
 - `number_counter`
 
 XML里写
+```XML
+<launch>
+	<node pkg="my_py_pkg" exec="number_publisher"/>
+	<node pkg="my_py_pkg
+```

@@ -64,7 +64,30 @@ XML 写法是在 node 内部加 `<remap>`：
 如果你启动两个 publisher 和一个 counter，并希望它们都用同一个新 topic，就把同样的 remap 写到每个相关节点里。
 
 
+YAML参数文件：
+把参数放到config/*.yaml,launch只负责加载
+**参数文件也要安装到package share目录里，否则运行找不到路径
 
+XML加载YAML的写法：
+```
+<param from="$find-pkg-share my_robot-bringup)/config/number_params.yaml"/>
+
+
+namespace(命名空间)：把两套同样系统隔离开
+同时启动两台同类型/启动两份同构节点
+
+
+
+
+
+
+
+
+
+
+
+
+```
 
 
 

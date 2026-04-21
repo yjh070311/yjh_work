@@ -57,6 +57,8 @@ XML 写法是在 node 内部加 `<remap>`：
 
 ```
 <node pkg="my_cpp_pkg" exec="number_counter">
+	 <remap from="/number" to="/my_number" />
+</node>
 ```
 
 如果你启动两个 publisher 和一个 counter，并希望它们都用同一个新 topic，就把同样的 remap 写到每个相关节点里。

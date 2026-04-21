@@ -30,11 +30,11 @@ XML里写
 需要高级功能写一个小Python launch
 把Python launch include进launch里
 
-###  XML 里 include 另一个 launch
+## XML 里 include 另一个 launch
+
 
 XML 里 include 语法很直观：
-
- <launch>
+<launch>
 	<include file="$(find_pkg_share my_robot_bringup)/launch/number_app.launch.py"/>
 <launch>
 

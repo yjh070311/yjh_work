@@ -85,9 +85,25 @@ namespace作用到topic名写number无前导/，会自动随namespace变成/abc/
 /number是全局名字，不会受namespace影响
 
 
-# TF
+# TF(transform)
+3D空间两个坐标系（frame）之间的变换关系
 
+TF用来**跟踪**ros各种坐标系随时间的变化
 
+## 1. 先把机器人模型跑起来：用 RViz 看 3D 结构
+
+##   
+
+RViz 是 ROS 生态里最常用的 3D 可视化工具。它能显示：
+
+- 机器人模型（几何外观）
+    
+- TF 坐标轴和变换关系
+    
+- 激光/点云/路径/轨迹/Marker 等等
+    
+
+这篇笔记我们不自己建模，直接用 ROS 2 自带生态里一个示例包：`urdf_tutorial`。
 
 
 

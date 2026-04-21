@@ -123,7 +123,11 @@ ros2 launch urdf_tutorial display.launch.py model:=绝对路径
 RobotModel #刚体部件
 TF #坐标轴关系
 ```
-部件展开links
+部件展开links，由link构成
+link是一个刚体部件，但是是独立的
+要让他们动起来要用TF
+
+
 
 
 

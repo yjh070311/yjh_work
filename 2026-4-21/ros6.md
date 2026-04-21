@@ -7,4 +7,13 @@
 专门建一个启动入口包，名字以_bringup结尾
 这个包不写节点，只放：
 launch/:启动文件（XML/PYTHON）
-config/:YMAMLc
+config/:YAML参数文件
+
+
+一个命令启动 number 应用里的两个节点：
+
+- `number_publisher`
+    
+- `number_counter`
+
+XML里写

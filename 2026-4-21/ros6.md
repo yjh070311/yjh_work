@@ -40,6 +40,23 @@ XML 里 include 语法很直观：
 
 
 
+## 7. Launch File 里能配置什么？（核心三件套）
+
+你在命令行 `ros2 run` 里能做的事情，launch 基本都能做。最常用的是三类：
+
+1. **重命名节点**（避免冲突）
+    
+2. **Remap 通信名**（topic/service/action 重映射）
+    
+3. **加载参数**（单个 param 或 YAML 文件）
+
+
+
+
+
+
+
+
 
 
 

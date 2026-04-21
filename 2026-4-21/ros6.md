@@ -71,7 +71,7 @@ YAML参数文件：
 XML加载YAML的写法：
 ```
 <param from="$find-pkg-share my_robot-bringup)/config/number_params.yaml"/>
-
+```
 
 namespace(命名空间)：把两套同样系统隔离开
 同时启动两台同类型/启动两份同构节点

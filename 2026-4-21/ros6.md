@@ -26,4 +26,14 @@ XML里写
 节点输出都在同一个地方
 
 
-默认用
+默认用XML写主launch
+需要高级功能写一个小Python launch
+把Python launch include进launch里
+
+###  XML 里 include 另一个 launch
+
+XML 里 include 语法很直观：
+
+```
+<launch>
+```

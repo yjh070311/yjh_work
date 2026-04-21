@@ -34,11 +34,11 @@ XML里写
 
 XML 里 include 语法很直观：
 
-```
+ <launch>
+	<include file="$(find_pkg_share my_robot_bringup)/launch/number_app.launch.py"/>
 <launch>
-	<include file="$(find_pkg_share my_robot_bringup)/launch/number
 
-```
+
 
 
 

@@ -113,7 +113,17 @@ sudo apt install ros-<distro>-urdf-tutorial
 ros2 launch urdf_tutorial display.launch.py model:=绝对路径
 ```
 
+## 2. TF 到底是什么：Link / Frame / TF 一次讲清
 
+##   
+
+在 RViz 左侧的 Displays 里，你会看到两个很关键的东西：
+
+```
+RobotModel #刚体部件
+TF #坐标轴关系
+```
+部件展开links
 
 
 

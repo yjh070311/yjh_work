@@ -4,4 +4,7 @@
 可以用ros2 launch 包名 launch file名一键启动
 
 
-专门建一个启动入口包
+专门建一个启动入口包，名字以_bringup结尾
+这个包不写节点，只放：
+launch/:启动文件（XML/PYTHON）
+config/:YMAMLc

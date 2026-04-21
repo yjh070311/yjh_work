@@ -104,7 +104,14 @@ RViz 是 ROS 生态里最常用的 3D 可视化工具。它能显示：
     
 
 这篇笔记我们不自己建模，直接用 ROS 2 自带生态里一个示例包：`urdf_tutorial`。
-
+```
+sudo apt install ros-<distro>-urdf-tutorial
+```
+进入urdf文件目录：
+用绝对路径启动
+```
+ros2 launch urdf_tutorial display.launch.py model:=绝对路径
+```
 
 
 

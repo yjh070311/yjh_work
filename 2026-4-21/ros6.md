@@ -20,5 +20,10 @@ XML里写
 ```XML
 <launch>
 	<node pkg="my_py_pkg" exec="number_publisher"/>
-	<node pkg="my_py_pkg
+	<node pkg="my_py_pkg" exec="number_counter"/>
+<launch>
 ```
+节点输出都在同一个地方
+
+
+默认用

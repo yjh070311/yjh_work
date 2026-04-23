@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-4-21/ros6.md",
+                "file": "2026-4-23/plan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ros6"
+              "title": "plan"
             }
           }
         ]
@@ -195,13 +195,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "60aba13158fbb61d",
+  "active": "d0781be1d1144801",
   "lastOpenFiles": [
-    "2026-4-20 1/plan.md",
-    "2026-4-20 1",
     "待学，做.md",
-    "2026-4-21/ros6.md",
     "2026-4-21/plan.md",
+    "2026-4-21/ros6.md",
+    "2026-4-23/plan.md",
+    "2026-4-23",
     "2026-4-20/plan.md",
     "2026-4-21",
     "2026-04-17-18-19/weekend plan.md",
